@@ -2151,7 +2151,7 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 265vh;
+        height: 335vh;
     }
 
     .dot_area_agendamento {
@@ -2220,7 +2220,7 @@ input[type="checkbox"]:checked::after {
     }
 
     aside {
-        height: 250vh;
+        height: 290vh;
     }
 
     .camp_area {
@@ -2315,7 +2315,7 @@ input[type="checkbox"]:checked::after {
 
 
     footer {
-        height: 80vh;
+        height: 100vh;
     }
 
     #rodape {
