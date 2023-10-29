@@ -108,7 +108,7 @@ a.nav-link {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.login_signup {
+#login_signup {
     width: 150px;
     height: 40px;
     padding: 5px;
@@ -123,7 +123,7 @@ a.nav-link {
     margin-right: 5%;
 }
 
-.login_signup:hover {
+#login_signup:hover {
     background-color: #FBB6B6;
     transition: all .3s;
 }
@@ -1176,7 +1176,7 @@ footer ul {
     background: #A63539;
     color: #fff;
     border-radius: 7px;
-    border: 0px solid #A63539;
+    border: 1px solid #FBB6B6;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-style: 600;
@@ -1193,7 +1193,6 @@ footer ul {
 .button__secundary:hover {
     background-color: #FBB6B6;
     transition: all .3s;
-    color: #fff;
 }
 
 .modal_cadastro {
@@ -1373,7 +1372,7 @@ input[type="checkbox"]:checked::after {
         z-index: 5;
     }
 
-    .login_signup {
+    #login_signup {
         width: 115px;
         height: 35px;
         font-size: 0.7rem;
@@ -1395,7 +1394,8 @@ input[type="checkbox"]:checked::after {
     }
 
     #initial_page {
-        margin-left: 5%;
+        margin-top: 30%;
+        margin-left: 3%;
     }
 
     .intro_text p {
@@ -1412,13 +1412,14 @@ input[type="checkbox"]:checked::after {
 
     .coluna1 {
         font-size: 1.0rem;
-        padding: 15px;
+        padding: 10px;
         margin-top: 0;
-        margin-right: 5%;
+        margin-right: 2%;
     }
 
     .coluna2 {
         margin-bottom: 35px;
+        width: 310px;
     }
 
     iframe {
@@ -1428,8 +1429,12 @@ input[type="checkbox"]:checked::after {
     }
 
     .container_estoque {
-        margin-top: 10%;
-        height: 45vh;
+        margin-top: 28%;
+        height: 55vh;
+    }
+
+    .line_detail {
+        margin-top: 50px;
     }
 
     section.containerProjeto {
@@ -1621,7 +1626,7 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 255vh;
+        height: 350vh;
     }
 
     .dot_area_agendamento {
@@ -1646,7 +1651,7 @@ input[type="checkbox"]:checked::after {
         margin-left: 2%;
     }
 
-    .button_main button {
+    .button__primary {
         width: 135px;
         height: 35px;
         font-size: 12px;
@@ -1687,6 +1692,12 @@ input[type="checkbox"]:checked::after {
         align-items: center;
     }
 
+    .button_main button {
+        width: 104px;
+        height: 28px;
+        font-size: 10px;
+    }
+
     /* ÁREA DE CAMPANHAS (RESPONSIVA)*/
 
     body {
@@ -1694,7 +1705,7 @@ input[type="checkbox"]:checked::after {
     }
 
     aside {
-        height: 185vh;
+        height: 250vh;
     }
 
     .camp_area {
@@ -1797,7 +1808,7 @@ input[type="checkbox"]:checked::after {
 
 
     footer {
-        height: 100vh;
+        height: 120vh;
     }
 
     #rodape {
@@ -2388,7 +2399,7 @@ input[type="checkbox"]:checked::after {
         transition: all .3s;
     }
 
-    .login_signup {
+    #login_signup {
         width: 85px;
         height: 30px;
         padding: 5px;
@@ -2820,7 +2831,7 @@ input[type="checkbox"]:checked::after {
         transition: all .3s;
     }
 
-    .login_signup {
+    #login_signup {
         width: 120px;
         height: 30px;
         padding: 5px;
@@ -3152,7 +3163,7 @@ input[type="checkbox"]:checked::after {
         transition: all .3s;
     }
 
-    .login_signup {
+    #login_signup {
         width: 140px;
         height: 35px;
         padding: 5px;
@@ -3330,7 +3341,7 @@ input[type="checkbox"]:checked::after {
         height: 220px;
     }
 
-    .button_main {
+    .button__primary {
         align-items: center;
     }
 
@@ -3477,3 +3488,5 @@ input[type="checkbox"]:checked::after {
 
 
 }
+
+
