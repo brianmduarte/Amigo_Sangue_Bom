@@ -20,610 +20,615 @@
 
 <body>
 
-        <!-------------ERICK---------------- HEADER - NAV E MAIN -------------------->
-        <div class="modal_cadastro" id="modal_cadastro">
-    
-            <h4 style="margin: 20px; text-align: left;">Cadastre-se :D</h4>
-    
-            <div style="display: block;">
-    
-                <div class="input-container">
-                    <input placeholder="Nome completo" class="input-field" type="text" id="name_input">
-                    <span class="input-highlight"></span>
-                </div>
-    
-                <div class="input-container">
-                    <input placeholder="Email" class="input-field" type="email" id="email_input">
-                    <span class="input-highlight"></span>
-                    <span class="red-error" id="wrong_email">Email inválido</span>
-                </div>
-    
-                <div class="input-container">
-                    <input placeholder="Telefone" class="input-field" type="number" id="cellphone_input">
-                    <span class="input-highlight"></span>
-                    <span class="red-error" id="wrong_cellphone">Telefone inválido</span>
-                </div>
-    
-                <div class="input-container">
-                    <input placeholder="Data de nascimento" class="input-field" type="date" id="born_input">
-                    <span class="input-highlight"></span>
-                    <span class="red-error" id="wrong_borndate">Data de nascimento inválido</span>
-                </div>
-    
-                <div class="input-container">
-                    <input placeholder="CPF" class="input-field" type="text" id="cpf_input">
-                    <span class="input-highlight"></span>
-                    <span class="red-error" id="wrong_cpf">CPF inválido</span>
-                </div>
-    
-                <div class="input-container">
-                    <input placeholder="Senha" class="input-field" type="password" id="password_input">
-                    <span class="input-highlight"></span>
-                </div>
-                <div class="input-container">
-                    <input placeholder="Confirme sua senha" class="input-field" type="password" id="repeat_password_input">
-                    <span class="input-highlight"></span>
-    
-                    <span class="red-error" id="wrong_password">Senha não bate</span>
-                </div>
-    
+    <!-------------ERICK---------------- HEADER - NAV E MAIN -------------------->
+    <div class="modal_cadastro" id="modal_cadastro">
+
+        <h4 style="margin: 20px; text-align: left;">Cadastre-se :D</h4>
+
+        <div style="display: block;">
+
+            <div class="input-container">
+                <input placeholder="Nome completo" class="input-field" type="text" id="name_input">
+                <span class="input-highlight"></span>
             </div>
-            <!-- checkbox -->
-    
-            <div style="display: block; margin-top: 50px; ">
-    
-                <div class="input-container">
-                    <input class="input-checkbox" type="checkbox" id="informacoes_reais">
-                    <label for="input-checkbox">Eu declaro que as informações acima são veridicas e me responsabilizo por
-                        quaisquer dados inválidos</label>
-                </div>
-    
-                <div class="input-container">
-    
-                    <input class="input-checkbox" type="checkbox" id="termos_de_uso">
-                    <label for="input-checkbox">Eu aceito os <span class="red-color">Termos de Uso</span> e a <span
-                            class="red-color">Política de privacidade</span> </label>
-                </div>
-                <div class="input-container">
-                    <input class="input-checkbox" type="checkbox" id="lerolero">
-                    <label for="input-checkbox">Eu aceito receber comunicados sobre campanhas de doação, assim como outras
-                        provenientes desde projeto via e-mail. <span class="red-color">(Opcional)</span></label>
-                </div>
-    
+
+            <div class="input-container">
+                <input placeholder="Email" class="input-field" type="email" id="email_input">
+                <span class="input-highlight"></span>
+                <span class="red-error" id="wrong_email">Email inválido</span>
             </div>
-            <!-- <span class="red-error" id="accept_checkbox">Marque os itens obrigatórios</span> -->
-    
-            <div class="button__wrapper">
-                <button class="button__primary" type="submit" id="done_signup" onclick="validarCadastro()">Concluir</button>
-                <button class="button__secundary" type="submit" id="cancel_signup">Cancelar</button>
+
+            <div class="input-container">
+                <input placeholder="Telefone" class="input-field" type="number" id="cellphone_input">
+                <span class="input-highlight"></span>
+                <span class="red-error" id="wrong_cellphone">Telefone inválido</span>
+            </div>
+
+            <div class="input-container">
+                <input placeholder="Data de nascimento" class="input-field" type="date" id="born_input">
+                <span class="input-highlight"></span>
+                <span class="red-error" id="wrong_borndate">Data de nascimento inválido</span>
+            </div>
+
+            <div class="input-container">
+                <input placeholder="CPF" class="input-field" type="text" id="cpf_input">
+                <span class="input-highlight"></span>
+                <span class="red-error" id="wrong_cpf">CPF inválido</span>
+            </div>
+
+            <div class="input-container">
+                <input placeholder="Senha" class="input-field" type="password" id="password_input">
+                <span class="input-highlight"></span>
+            </div>
+            <div class="input-container">
+                <input placeholder="Confirme sua senha" class="input-field" type="password" id="repeat_password_input">
+                <span class="input-highlight"></span>
+
+                <span class="red-error" id="wrong_password">Senha não bate</span>
+            </div>
+
+        </div>
+        <!-- checkbox -->
+
+        <div style="display: block; margin-top: 50px; ">
+
+            <div class="input-container">
+                <input class="input-checkbox" type="checkbox" id="informacoes_reais">
+                <label for="input-checkbox">Eu declaro que as informações acima são veridicas e me responsabilizo por
+                    quaisquer dados inválidos</label>
+            </div>
+
+            <div class="input-container">
+
+                <input class="input-checkbox" type="checkbox" id="termos_de_uso">
+                <label for="input-checkbox">Eu aceito os <span class="red-color">Termos de Uso</span> e a <span
+                        class="red-color">Política de privacidade</span> </label>
+            </div>
+            <div class="input-container">
+                <input class="input-checkbox" type="checkbox" id="lerolero">
+                <label for="input-checkbox">Eu aceito receber comunicados sobre campanhas de doação, assim como outras
+                    provenientes desde projeto via e-mail. <span class="red-color">(Opcional)</span></label>
+            </div>
+
+        </div>
+        <!-- <span class="red-error" id="accept_checkbox">Marque os itens obrigatórios</span> -->
+
+        <div class="button__wrapper">
+            <button class="button__primary" type="submit" id="done_signup" onclick="validarCadastro()">Concluir</button>
+            <button class="button__secundary" type="submit" id="cancel_signup">Cancelar</button>
+        </div>
+    </div>
+    </div>
+    <header>
+
+
+        <div class="logo">
+            <a href="#initial_page"><img src="/Amigo_Sangue_Bom/documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
+        </div>
+        <ul class="nav-bar">
+            <li><a class="nav-link" href="#title-01">Sobre o projeto</a></li>
+            <li><a class="nav-link" href="#title-02">Como doar</a></li>
+            <li><a class="nav-link" href="#title-03">Agendamento</a></li>
+            <li><a class="nav-link" href="#camp_title">Campanhas</a></li>
+            <li><a class="nav-link" href="#title-05">Fale conosco</a></li>
+        </ul>
+        <button class="button__primary" id="login_signup">CADASTRE-SE</button>
+
+        <!-- favor não mudar essa div 'hamburguer' -->
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="coluna1">
+                <div class="intro">
+                    <p id="initial_page">Salve vidas!</p>
+                    <p>Doe <span>sangue</span>.</p>
+
+                </div>
+                <div class="intro_text">
+
+                    <p>Você sabia que é possível fazer a diferença na vida de uma pessoa com apenas um clique?</p>
+                    <p>O Amigo Sangue Bom tem o propósito de usar a tecnologia para contribuir com o aumento de doadores
+                        no
+                        Brasil. Para que isso seja possível, contamos com a sua ajuda!</p>
+                    <p>Veja ao lado a importância da doação de sangue.</p>
+                </div>
+            </div>
+            <div class="coluna2">
+                <iframe width="550" height="350"
+                    src="https://www.youtube.com/embed/GP3t-zugUZA?si=kEgZHGzGY0cMx_EY&amp;start=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe><!-- div apenas de exemplo antes do video -->
             </div>
         </div>
+    </main>
+
+    <!-- ÁREA DE ESTOQUE DE SANGUE -->
+    <div id="background_aside">
+        <div class="container_estoque">
+            <h2 id="title_estoque_blood"> Estoque de <span>Sangue</span> </h2>
+            <p> Veja abaixo os níveis atuais de estoque e saiba qual é o melhor momento para doar.</p>
+
+            <div class="area_bloods">
+                <div class="icon_blood"> <img src="/Amigo_Sangue_Bom/documentos/img/Component 1.png" alt="nível de sangue">
+                    <p> Agende a doação o quanto antes</p>
+                </div>
+                <div class="icon_blood"> <img src="/Amigo_Sangue_Bom/documentos/img/Component 2.png" alt="nível de sangue">
+                    <p>Agende a doação nesta semana</p>
+                </div>
+                <div class="icon_blood"> <img src="/Amigo_Sangue_Bom/documentos/img/Component 3.png" alt="nível de sangue">
+                    <p>Agende a doação para a próxima semana</p>
+                </div>
+                <div class="icon_blood"> <img src="/Amigo_Sangue_Bom/documentos/img/Component 4.png" alt="nível de sangue">
+                    <p>Aguarde 10 dias para agendar</p>
+                </div>
+            </div>
+            <div class="line_detail"></div>
         </div>
-        <header>
-    
-    
-            <div class="logo">
-                <a href="#initial_page"><img src="../documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
+
+
+
+
+
+        <h2 id="title_estoque_blood"> Níveis em estoque </h2>
+        <div class="container_nivel_estoque">
+
+            <div class="title_estoque">
+                <h4>O+</h4>
+                <img src="/Amigo_Sangue_Bom/documentos/img/Component 1.png" alt="">
+                <p>Crítico</p>
             </div>
-            <ul class="nav-bar">
-                <li><a class="nav-link" href="#title-01">Sobre o projeto</a></li>
-                <li><a class="nav-link" href="#title-02">Como doar</a></li>
-                <li><a class="nav-link" href="#title-03">Agendamento</a></li>
-                <li><a class="nav-link" href="#camp_title">Campanhas</a></li>
-                <li><a class="nav-link" href="#title-05">Fale conosco</a></li>
-            </ul>
-            <button class="button__primary" id="login_signup">CADASTRE-SE</button>
-    
-            <!-- favor não mudar essa div 'hamburguer' -->
-            <div class="hamburger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+
+            <div class="title_estoque">
+                <h4>O-</h4>
+                <img src="/Amigo_Sangue_Bom/documentos/img/Component 3.png" alt="">
+                <p>Adequado</p>
             </div>
-    
-    
-        </header>
-    
-        <main>
-            <div class="container">
-                <div class="coluna1">
-                    <div class="intro">
-                        <p id="initial_page">Salve vidas!</p>
-                        <p>Doe <span>sangue</span>.</p>
-    
-                    </div>
-                    <div class="intro_text">
-    
-                        <p>Você sabia que é possível fazer a diferença na vida de uma pessoa com apenas um clique?</p>
-                        <p>O Amigo Sangue Bom tem o propósito de usar a tecnologia para contribuir com o aumento de doadores
-                            no
-                            Brasil. Para que isso seja possível, contamos com a sua ajuda!</p>
-                        <p>Veja ao lado a importância da doação de sangue.</p>
-                    </div>
-                </div>
-                <div class="coluna2">
-                    <iframe width="550" height="350"
-                        src="https://www.youtube.com/embed/GP3t-zugUZA?si=kEgZHGzGY0cMx_EY&amp;start=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe><!-- div apenas de exemplo antes do video -->
-                </div>
+
+            <div class="title_estoque">
+                <h4>A+</h4>
+                <img src="/Amigo_Sangue_Bom/documentos/img/Component 1.png" alt="">
+                <p>Crítico</p>
             </div>
-        </main>
-    
-        <!-- ÁREA DE ESTOQUE DE SANGUE -->
-        <div id="background_aside">
-            <div class="container_estoque">
-                <h2 id="title_estoque_blood"> Estoque de <span>Sangue</span> </h2>
-                <p> Veja abaixo os níveis atuais de estoque e saiba qual é o melhor momento para doar.</p>
-    
-                <div class="area_bloods">
-                    <div class="icon_blood"> <img src="../documentos/img/Component 1.png" alt="nível de sangue">
-                        <p> Agende a doação o quanto antes</p>
-                    </div>
-                    <div class="icon_blood"> <img src="../documentos/img/Component 2.png" alt="nível de sangue">
-                        <p>Agende a doação nesta semana</p>
-                    </div>
-                    <div class="icon_blood"> <img src="../documentos/img/Component 3.png" alt="nível de sangue">
-                        <p>Agende a doação para a próxima semana</p>
-                    </div>
-                    <div class="icon_blood"> <img src="../documentos/img/Component 4.png" alt="nível de sangue">
-                        <p>Aguarde 10 dias para agendar</p>
-                    </div>
-                </div>
-                <div class="line_detail"></div>
+
+            <div class="title_estoque">
+                <h4>A-</h4>
+                <img src="/Amigo_Sangue_Bom/documentos/img/Component 2.png" alt="">
+                <p>Alerta</p>
             </div>
-    
-    
-    
-    
-    
-            <h2 id="title_estoque_blood"> Níveis em estoque </h2>
-            <div class="container_nivel_estoque">
-    
-                <div class="title_estoque">
-                    <h4>O+</h4>
-                    <img src="../documentos/img/Component 1.png" alt="">
-                    <p>Crítico</p>
-                </div>
-    
-                <div class="title_estoque">
-                    <h4>O-</h4>
-                    <img src="../documentos/img/Component 3.png" alt="">
-                    <p>Adequado</p>
-                </div>
-    
-                <div class="title_estoque">
-                    <h4>A+</h4>
-                    <img src="../documentos/img/Component 1.png" alt="">
-                    <p>Crítico</p>
-                </div>
-    
-                <div class="title_estoque">
-                    <h4>A-</h4>
-                    <img src="../documentos/img/Component 2.png" alt="">
-                    <p>Alerta</p>
-                </div>
-    
-                <div class="title_estoque">
-                    <h4>B+</h4>
-                    <img src="../documentos/img/Component 4.png" alt="">
-                    <p>Estável</p>
-                </div>
-    
-                <div class="title_estoque">
-                    <h4>B-</h4>
-                    <img src="../documentos/img/Component 3.png" alt="">
-                    <p>Adequado</p>
-                </div>
-    
-                <div class="title_estoque">
-                    <h4>AB+</h4>
-                    <img src="../documentos/img/Component 1.png" alt="">
-                    <p>Crítico</p>
-                </div>
-    
-                <div class="title_estoque">
-                    <h4>AB-</h4>
-                    <img src="../documentos/img/Component 3.png" alt="">
-                    <p>Adequado</p>
-                </div>
+
+            <div class="title_estoque">
+                <h4>B+</h4>
+                <img src="/Amigo_Sangue_Bom/documentos/img/Component 4.png" alt="">
+                <p>Estável</p>
+            </div>
+
+            <div class="title_estoque">
+                <h4>B-</h4>
+                <img src="/Amigo_Sangue_Bom/documentos/img/Component 3.png" alt="">
+                <p>Adequado</p>
+            </div>
+
+            <div class="title_estoque">
+                <h4>AB+</h4>
+                <img src="/Amigo_Sangue_Bom/documentos/img/Component 1.png" alt="">
+                <p>Crítico</p>
+            </div>
+
+            <div class="title_estoque">
+                <h4>AB-</h4>
+                <img src="/Amigo_Sangue_Bom/documentos/img/Component 3.png" alt="">
+                <p>Adequado</p>
             </div>
         </div>
-    
-        <!-- ÁREA DE ESTOQUE DE SANGUE -->
-    
-        <div class="icon_model">
-            <div class="icon_line_right"></div>
-        </div>
-    
-    
-    
-    
-        <!-------------ERICK---------------- HEADER - NAV E MAIN -------------------->
-    
-    
-    
-    
-        <!-------------DOUGLAS---------------- SECTION 1 ----------------------------->
-        <section class="containerProjeto">
-            <div class="projeto_title">
-                <div class="dot_area_agendamento">
-                    <div class="dot_icon"></div>
-                </div>
-                <h1 id="title-01">O PROJETO</h1>
-            </div>
-    
-            <div class="logo_section1">
-                <img src="../documentos/img/logoprojeto.png" alt="Logo">
-    
-    
-                <div class="conteudo-projeto">
-                    <p>O Amigo Sangue bom é um projeto desenvolvido por 6 alunos apaixonados por tecnologia e inovação do
-                        curso de Análise e Desenvolvimento de Sistemas da Puc Minas. O intuito da plataforma é atrair
-                        pessoas para contribuir com a doação de sangue. Para isso, o site permite que os usuários verifiquem
-                        a compatibilidade para doação, agende, conscientize-se e divulgue campanhas de incentivo.</p>
-                </div>
-            </div>
-    
-            </div>
-        </section>
-    
-        <!--------------DOUGLAS--------------- SECTION 1 ----------------------------->
-    
-    
-        <!------DOUGLAS/LUIZ--------------- SECTION 2 ----------------------------->
-    
-        <section class="how_donate">
-    
-            <!----------------------- TÍTULO DA SEÇÃO -------------->
-            <div class="dot_area">
-                <div class="dot_icon"></div>
-                <div class="title_how_donate">
-                    <h1 id="title-02">COMO DOAR</h1>
-                </div>
-            </div>
-    
-    
-            <!----------------------- SUBTÍTULO DA SEÇÃO -------------->
-            <div class="subtitle_how_donate">
-                <h2>VEJA ABAIXO OS PRINCIPAIS PRÉ-REQUISITOS PARA A DOAÇÃO DE SANGUE</h2>
-            </div>
-    
-            <!-------------------- ÁREA DE DIAGRAMA ----------->
-            <div class="steps_area">
-                <div class="steps_area_form">
-                    <div class="steps_left">
-                        <div class="step_text_area1">
-                            <h4>Ter entre 16 a 69 anos de idade.</h4>
-                        </div>
-                        <div class="step_line_area1"></div>
-    
-                        <div class="step_text_area3">
-                            <h4>Estar bem hidratado.</h4>
-                        </div>
-                        <div class="step_line_area3"></div>
-    
-                        <div class="step_text_area5">
-                            <h4>Estar descansado, considerando um período de sono mínimo de 4 horas.</h4>
-                        </div>
-                        <div class="step_line_area5"></div>
-                    </div>
-                    <div class="steps_center">
-                        <div class="circle_icon">
-                            <h4>1</h4>
-                        </div>
-                        <div class="circle_icon">
-                            <h4>2</h4>
-                        </div>
-                        <div class="circle_icon">
-                            <h4>3</h4>
-                        </div>
-                        <div class="circle_icon">
-                            <h4>4</h4>
-                        </div>
-                        <div class="circle_icon">
-                            <h4>5</h4>
-                        </div>
-                    </div>
-                    <div class="steps_right">
-                        <div class="step_line_area2"></div>
-                        <div class="step_text_area2">
-                            <h4>É necessário estar em jejum? Não. Para doação de sangue priorizar alimentos leves. Em casos
-                                ter feito alimentação compostas por alimentos mais gordurosos, aguardar no minino 3 horas.
-                            </h4>
-                        </div>
-    
-                        <div class="step_line_area4"></div>
-                        <div class="step_text_area4">
-                            <h4>Intervalo para mulheres de 90 dias e para homens a cada 60 dias.</h4>
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
-    
-    
-            <!------------- ÁREA DE VALIDAÇÃO DE REQUISITOS------------>
-            <div class="validation_area">
-                <div class="validation_text">
-                    <h4>Quer saber se você está elegível à doação? Clique no botão abaixo.</h4>
-                </div>
-                <button id="validation_button"> Validar </button>
-            </div>
-    
-            <div class="line_section">
-                <div class="line_section_main"></div>
-            </div>
-    
-    
-    
+    </div>
+
+    <!-- ÁREA DE ESTOQUE DE SANGUE -->
+
+    <div class="icon_model">
+        <div class="icon_line_right"></div>
+    </div>
+
+
+
+
+    <!-------------ERICK---------------- HEADER - NAV E MAIN -------------------->
+
+
+
+
+    <!-------------DOUGLAS---------------- SECTION 1 ----------------------------->
+    <section class="containerProjeto">
+        <div class="projeto_title">
             <div class="dot_area_agendamento">
                 <div class="dot_icon"></div>
-                <div class="title_how_donate">
-                    <h1 id="title-03">AGENDAMENTO</h1>
-                </div>
             </div>
-    
-            <div class="schedular_area">
-                <div class="schedular_left">
-    
-                    <div class="calendar_main">
-                        <div class="calendar">
-                            <div class="month">Outubro 2023</div>
-                            <div class="days">
-                                <div class="week">D</div>
-                                <div class="week">S</div>
-                                <div class="week">T</div>
-                                <div class="week">Q</div>
-                                <div class="week">Q</div>
-                                <div class="week">S</div>
-                                <div class="week">S</div>
-                                <div class="dayoff">29</div>
-                                <div class="dayoff">30</div>
-                                <div class="day">1</div>
-                                <div class="day">2</div>
-                                <div class="day">3</div>
-                                <div class="day">4</div>
-                                <div class="day">5</div>
-                                <div class="day">6</div>
-                                <div class="day">7</div>
-                                <div class="day">8</div>
-                                <div class="day">9</div>
-                                <div class="day">10</div>
-                                <div class="day">11</div>
-                                <div class="day">12</div>
-                                <div class="day">13</div>
-                                <div class="day">14</div>
-                                <div class="day">15</div>
-                                <div class="day">16</div>
-                                <div class="day">17</div>
-                                <div class="day">18</div>
-                                <div class="day">19</div>
-                                <div class="day">20</div>
-                                <div class="day">21</div>
-                                <div class="day">22</div>
-                                <div class="day">23</div>
-                                <div class="day">24</div>
-                                <div class="day">25</div>
-                                <div class="day">26</div>
-                                <div class="day">27</div>
-                                <div class="day">28</div>
-                                <div class="day">29</div>
-                                <div class="day">30</div>
-                                <div class="day">31</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button_main"><a href="https://www.mg.gov.br/agendamento_servico/doacao-de-sangue" target="_blank" rel="noopener noreferrer"><button>Agendar</button></a></div>
-                </div>
-                <div class="schedular_right">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7502.07054340623!2d-43.995961457785484!3d-19.922918425855517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spuc%20minas%20eucaristico!5e0!3m2!1spt-BR!2sbr!4v1696985356185!5m2!1spt-BR!2sbr"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-    
-            </div>
-            </div>
-    
-        </section>
-        <!---------DOUGLAS/LUIZ--------------- SECTION 2 ------------------------------------->
-    
-    
-        <!------BRIAN/RANAN/MATEUS----------------------- ASIDES ----------------------------->
-    
-    
-        <aside>
-    
-            <!-- ÁREA DE CAMPANHAS DESENVOLVIDAS POR BRIAN-->
-            <div class="dot_area">
-                <div class="dot_icon"></div>
-                <h1 id="camp_title"> CAMPANHAS</h1>
-            </div>
-    
-    
-            <!-- PUBLICAÇÃO 1-->
-            <div class="camp_area">
-                <div class="camp_publi">
-                    <div class="form_date">
-                        <div class="form_date_text">24 SET 23</div>
-                    </div>
-                    <a href="#">
-                        <div class="camp_img">
-                            <img src="../documentos/img/doe_1.png" alt="">
-                        </div>
-                    </a>
-    
-                    <div class="camp_publi_title">SALVE VIDAS HOJE: DOE SANGUE E FAÇA A DIFERENÇA!</div>
-                    <div class="camp_publi_subtitle">Seu gesto pode ser a diferença entre a vida e a morte. Doe sangue e
-                        ajude quem mais precisa. </div>
-    
-                    <div class="icon_area">
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Facebook.png" alt="Curtir"></a></div>
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Favorite.png" alt="Favoritar"></a>
-                        </div>
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Right.png" alt="Compartilhar"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- PUBLICAÇÃO 2-->
-                <div class="camp_publi">
-                    <div class="form_date">
-                        <div class="form_date_text">24 SET 23</div>
-                    </div>
-                    <a href="#">
-                        <div class="camp_img">
-                            <img src="../documentos/img/doe_2.png" alt="">
-                        </div>
-                    </a>
-    
-                    <div class="camp_publi_title">O presente da vida: torne-se um doador de sangue!</div>
-                    <div class="camp_publi_subtitle">Seu gesto pode ser a diferença entre a vida e a morte. Doe sangue e
-                        ajude quem mais precisa. </div>
-    
-                    <div class="icon_area">
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Facebook.png" alt="Curtir"></a></div>
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Favorite.png" alt="Favoritar"></a>
-                        </div>
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Right.png" alt="Compartilhar"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- PUBLICAÇÃO 3-->
-                <div class="camp_publi">
-                    <div class="form_date">
-                        <div class="form_date_text">24 SET 23</div>
-                    </div>
-                    <a href="#">
-                        <div class="camp_img">
-                            <img src="../documentos/img/doe_3.png" alt="">
-                        </div>
-                    </a>
-    
-                    <div class="camp_publi_title">Doar Sangue é Amor em Ação: Junte-se à Causa!</div>
-                    <div class="camp_publi_subtitle">Seu gesto pode ser a diferença entre a vida e a morte. Doe sangue e
-                        ajude quem mais precisa. </div>
-    
-                    <div class="icon_area">
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Facebook.png" alt="Curtir"></a></div>
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Favorite.png" alt="Favoritar"></a>
-                        </div>
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Right.png" alt="Compartilhar"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- PUBLICAÇÃO 4-->
-                <div class="camp_publi">
-                    <div class="form_date">
-                        <div class="form_date_text">24 SET 23</div>
-                    </div>
-                    <a href="#">
-                        <div class="camp_img">
-                            <img src="../documentos/img/doe_4.png" alt="">
-                        </div>
-                    </a>
-    
-                    <div class="camp_publi_title">heróis anônimos: torne-se um doador de sangue!</div>
-                    <div class="camp_publi_subtitle">Seu gesto pode ser a diferença entre a vida e a morte. Doe sangue e
-                        ajude quem mais precisa. </div>
-    
-                    <div class="icon_area">
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Facebook.png" alt="Curtir"></a></div>
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Favorite.png" alt="Favoritar"></a>
-                        </div>
-                        <div class="fb-icon"> <a href="#"><img src="../documentos/img/Right.png" alt="Compartilhar"></a>
-                        </div>
-                    </div>
-                </div>
-    
-    
-    
-            </div>
-    
-    
-        </aside>
-    
-    
-    
-        <!-------BRIAN/RANAN/MATEUS----------------- ASIDES -------------------------->
-    
-    
-    
-        <!-------RANAN/MATEUS------------ SECTION 3 ---------------------------->
-    
-        <section3>
-    
-    
-            <div class="Cont">
-                <div class="text">
-                    <h2 id="title-05"> Deseja contribuir conosco, tirar dúvidas, ou deixar algum relato? <p>
-                        </p>Nos envie uma mensagem e teremos o prazer de respondê-lo.</h2>
-    
-                    <form class="form_cont" method="Post">
-                        <label>Nome</label>
-                        <input type="text" name="name" placeholder="Digite seu nome">
-                        <label>Email</label>
-                        <input type="email" name="email" placeholder="Digite seu email">
-                        <label>Telefone</label>
-                        <input type="telefone" name="telefone" placeholder="Digite seu telefone">
-                        <label>Mensagem</label>
-                        <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-                        <p>
-                            <button class="button_enviar">ENVIAR</button>
-    
-                    </form>
-                </div>
-            </div>
-        </section3>
-    
+            <h1 id="title-01">O PROJETO</h1>
+        </div>
 
-        </section>
-    
-        <!--------RANAN/MATEUS------------ SECTION 3 -------------------->
-    
-    
-    
-        <!---------MATEUS---------------- FOOTER ------------------>
-    
-        <!-- FOOTER DESENVOLVIDO - MATEUS -->
-        <footer>
-            <div id="rodape">
-                <div class="secoes-rodape" id="mapa-site">
-                    <ul>
-                        <li class="titulo-rodape">MAPA DO SITE</li>
-                        <li class="itens-lista"><a class="footer-link" href="#title-01">Quem somos</a></li>
-                        <li class="itens-lista"><a class="footer-link" href="#title-02">Como doar</a></li>
-                        <li class="itens-lista"><a class="footer-link" href="#title-03">Agendamentos</a></li>
-                        <li class="itens-lista"><a class="footer-link" href="#camp_title">Campanhas</a></li>
-                        <li class="itens-lista"><a class="footer-link" href="#title-05">Fale Conosco</a></li>
-                    </ul>
+        <div class="logo_section1">
+            <img src="/Amigo_Sangue_Bom/documentos/img/logoprojeto.png" alt="Logo">
+
+
+            <div class="conteudo-projeto">
+                <p>O Amigo Sangue bom é um projeto desenvolvido por 6 alunos apaixonados por tecnologia e inovação do
+                    curso de Análise e Desenvolvimento de Sistemas da Puc Minas. O intuito da plataforma é atrair
+                    pessoas para contribuir com a doação de sangue. Para isso, o site permite que os usuários verifiquem
+                    a compatibilidade para doação, agende, conscientize-se e divulgue campanhas de incentivo.</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!--------------DOUGLAS--------------- SECTION 1 ----------------------------->
+
+
+    <!------DOUGLAS/LUIZ--------------- SECTION 2 ----------------------------->
+
+    <section class="how_donate">
+
+        <!----------------------- TÍTULO DA SEÇÃO -------------->
+        <div class="dot_area">
+            <div class="dot_icon"></div>
+            <div class="title_how_donate">
+                <h1 id="title-02">COMO DOAR</h1>
+            </div>
+        </div>
+
+
+        <!----------------------- SUBTÍTULO DA SEÇÃO -------------->
+        <div class="subtitle_how_donate">
+            <h2>VEJA ABAIXO OS PRINCIPAIS PRÉ-REQUISITOS PARA A DOAÇÃO DE SANGUE</h2>
+        </div>
+
+        <!-------------------- ÁREA DE DIAGRAMA ----------->
+        <div class="steps_area">
+            <div class="steps_area_form">
+                <div class="steps_left">
+                    <div class="step_text_area1">
+                        <h4>Ter entre 16 a 69 anos de idade.</h4>
+                    </div>
+                    <div class="step_line_area1"></div>
+
+                    <div class="step_text_area3">
+                        <h4>Estar bem hidratado.</h4>
+                    </div>
+                    <div class="step_line_area3"></div>
+
+                    <div class="step_text_area5">
+                        <h4>Estar descansado, considerando um período de sono mínimo de 4 horas.</h4>
+                    </div>
+                    <div class="step_line_area5"></div>
                 </div>
-    
-                <div class="secoes-rodape" id="precisa-ajuda">
-                    <ul>
-                        <li class="titulo-rodape">PRECISA DE AJUDA?</li>
-                        <li class="itens-lista"><a class="footer-link" href="">E-mail</a></li>
-                        <li class="itens-lista"><a class="footer-link" href="">Fale Conosco</a></li>
-                        <li class="itens-lista"><a class="footer-link" href="">Whatsapp</a></li>
-                        <li class="itens-lista"><a class="footer-link" href="">Assistência Online</a></li>
-                    </ul>
+                <div class="steps_center">
+                    <div class="circle_icon">
+                        <h4>1</h4>
+                    </div>
+                    <div class="circle_icon">
+                        <h4>2</h4>
+                    </div>
+                    <div class="circle_icon">
+                        <h4>3</h4>
+                    </div>
+                    <div class="circle_icon">
+                        <h4>4</h4>
+                    </div>
+                    <div class="circle_icon">
+                        <h4>5</h4>
+                    </div>
                 </div>
-    
-                <div class="secoes-rodape" id="siga-nos">
-                    <ul class="itens-imagem">
-                        <li class="titulo-rodape">SIGA-NOS</li>
-                        <li class="logo-redes"><a class="footer-link" href=""><img src="../documentos/img/FacebookLogo.png"
-                                    alt="facebook"></a></li>
-                        <li class="logo-redes"><a class="footer-link" href=""><img src="../documentos/img/YoutubeLogo.png"
-                                    alt="youtube"></a></li>
-                        <li class="logo-redes"><a class="footer-link" href=""><img src="../documentos/img/TwitterLogo.png"
-                                    alt="twitter"></a></li>
-                        <li class="logo-redes"><a class="footer-link" href=""><img src="../documentos/img/InstagramLogo.png"
-                                    alt="instagram"></a></li>
-                    </ul>
+                <div class="steps_right">
+                    <div class="step_line_area2"></div>
+                    <div class="step_text_area2">
+                        <h4>É necessário estar em jejum? Não. Para doação de sangue priorizar alimentos leves. Em casos
+                            ter feito alimentação compostas por alimentos mais gordurosos, aguardar no minino 3 horas.
+                        </h4>
+                    </div>
+
+                    <div class="step_line_area4"></div>
+                    <div class="step_text_area4">
+                        <h4>Intervalo para mulheres de 90 dias e para homens a cada 60 dias.</h4>
+                    </div>
+
                 </div>
             </div>
-        </footer>
+        </div>
+
+
+        <!------------- ÁREA DE VALIDAÇÃO DE REQUISITOS------------>
+        <div class="validation_area">
+            <div class="validation_text">
+                <h4>Quer saber se você está elegível à doação? Clique no botão abaixo.</h4>
+            </div>
+            <button id="validation_button"> Validar </button>
+        </div>
+
+        <div class="line_section">
+            <div class="line_section_main"></div>
+        </div>
+
+
+
+
+
+        <div class="dot_area_agendamento">
+            <div class="dot_icon"></div>
+            <div class="title_how_donate">
+                <h1 id="title-03">AGENDAMENTO</h1>
+            </div>
+        </div>
+
+        <div class="schedular_area">
+            <div class="schedular_left">
+
+                <div class="calendar_main">
+                    <div class="calendar">
+                        <div class="month">Outubro 2023</div>
+                        <div class="days">
+                            <div class="week">D</div>
+                            <div class="week">S</div>
+                            <div class="week">T</div>
+                            <div class="week">Q</div>
+                            <div class="week">Q</div>
+                            <div class="week">S</div>
+                            <div class="week">S</div>
+                            <div class="dayoff">29</div>
+                            <div class="dayoff">30</div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button_main"><button>Agendar</button></div>
+            </div>
+            <div class="schedular_right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7502.07054340623!2d-43.995961457785484!3d-19.922918425855517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spuc%20minas%20eucaristico!5e0!3m2!1spt-BR!2sbr!4v1696985356185!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!---------DOUGLAS/LUIZ--------------- SECTION 2 ------------------------------------->
+
+
+    <!------BRIAN/RANAN/MATEUS----------------------- ASIDES ----------------------------->
+
+
+    <aside>
+
+        <!-- ÁREA DE CAMPANHAS DESENVOLVIDAS POR BRIAN-->
+        <div class="dot_area">
+            <div class="dot_icon"></div>
+            <h1 id="camp_title"> CAMPANHAS</h1>
+        </div>
+
+
+        <!-- PUBLICAÇÃO 1-->
+        <div class="camp_area">
+            <div class="camp_publi">
+                <div class="form_date">
+                    <div class="form_date_text">24 SET 23</div>
+                </div>
+                <a href="#">
+                    <div class="camp_img">
+                        <img src="/Amigo_Sangue_Bom/documentos/img/doe_1.png" alt="">
+                    </div>
+                </a>
+
+                <div class="camp_publi_title">SALVE VIDAS HOJE: DOE SANGUE E FAÇA A DIFERENÇA!</div>
+                <div class="camp_publi_subtitle">Seu gesto pode ser a diferença entre a vida e a morte. Doe sangue e
+                    ajude quem mais precisa. </div>
+
+                <div class="icon_area">
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Facebook.png" alt="Curtir"></a></div>
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Favorite.png" alt="Favoritar"></a>
+                    </div>
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Right.png" alt="Compartilhar"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- PUBLICAÇÃO 2-->
+            <div class="camp_publi">
+                <div class="form_date">
+                    <div class="form_date_text">24 SET 23</div>
+                </div>
+                <a href="#">
+                    <div class="camp_img">
+                        <img src="/Amigo_Sangue_Bom/documentos/img/doe_2.png" alt="">
+                    </div>
+                </a>
+
+                <div class="camp_publi_title">O presente da vida: torne-se um doador de sangue!</div>
+                <div class="camp_publi_subtitle">Seu gesto pode ser a diferença entre a vida e a morte. Doe sangue e
+                    ajude quem mais precisa. </div>
+
+                <div class="icon_area">
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Facebook.png" alt="Curtir"></a></div>
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Favorite.png" alt="Favoritar"></a>
+                    </div>
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Right.png" alt="Compartilhar"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- PUBLICAÇÃO 3-->
+            <div class="camp_publi">
+                <div class="form_date">
+                    <div class="form_date_text">24 SET 23</div>
+                </div>
+                <a href="#">
+                    <div class="camp_img">
+                        <img src="/Amigo_Sangue_Bom/documentos/img/doe_3.png" alt="">
+                    </div>
+                </a>
+
+                <div class="camp_publi_title">Doar Sangue é Amor em Ação: Junte-se à Causa!</div>
+                <div class="camp_publi_subtitle">Seu gesto pode ser a diferença entre a vida e a morte. Doe sangue e
+                    ajude quem mais precisa. </div>
+
+                <div class="icon_area">
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Facebook.png" alt="Curtir"></a></div>
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Favorite.png" alt="Favoritar"></a>
+                    </div>
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Right.png" alt="Compartilhar"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- PUBLICAÇÃO 4-->
+            <div class="camp_publi">
+                <div class="form_date">
+                    <div class="form_date_text">24 SET 23</div>
+                </div>
+                <a href="#">
+                    <div class="camp_img">
+                        <img src="/Amigo_Sangue_Bom/documentos/img/doe_4.png" alt="">
+                    </div>
+                </a>
+
+                <div class="camp_publi_title">heróis anônimos: torne-se um doador de sangue!</div>
+                <div class="camp_publi_subtitle">Seu gesto pode ser a diferença entre a vida e a morte. Doe sangue e
+                    ajude quem mais precisa. </div>
+
+                <div class="icon_area">
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Facebook.png" alt="Curtir"></a></div>
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Favorite.png" alt="Favoritar"></a>
+                    </div>
+                    <div class="fb-icon"> <a href="#"><img src="/Amigo_Sangue_Bom/documentos/img/Right.png" alt="Compartilhar"></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-------BRIAN/RANAN/MATEUS----------------- ASIDES -------------------------->
+
+
+
+    <!-------RANAN/MATEUS------------ SECTION 3 ---------------------------->
+
+    <section3>
+
+
+        <div class="Cont">
+            <div class="text">
+                <h2 id="title-05"> Deseja contribuir conosco, tirar dúvidas, ou deixar algum relato? <p>
+                    </p>Nos envie uma mensagem e teremos o prazer de respondê-lo.</h2>
+
+                <form class="form_cont" method="Post">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email">
+                    <label>Telefone</label>
+                    <input type="telefone" name="telefone" placeholder="Digite seu telefone">
+                    <label>Mensagem</label>
+                    <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                    <p>
+                        <button class="button_enviar">ENVIAR</button>
+
+                </form>
+            </div>
+        </div>
+    </section3>
+
+
+    </section>
+
+
+
+    <!--------RANAN/MATEUS------------ SECTION 3 -------------------->
+
+
+
+
+    <!---------MATEUS---------------- FOOTER ------------------>
+
+    <!-- FOOTER DESENVOLVIDO - MATEUS -->
+    <footer>
+        <div id="rodape">
+            <div class="secoes-rodape" id="mapa-site">
+                <ul>
+                    <li class="titulo-rodape">MAPA DO SITE</li>
+                    <li class="itens-lista"><a class="footer-link" href="">Quem somos</a></li>
+                    <li class="itens-lista"><a class="footer-link" href="">Como doar</a></li>
+                    <li class="itens-lista"><a class="footer-link" href="">Agendamentos</a></li>
+                    <li class="itens-lista"><a class="footer-link" href="">Campanhas</a></li>
+                    <li class="itens-lista"><a class="footer-link" href="">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="secoes-rodape" id="precisa-ajuda">
+                <ul>
+                    <li class="titulo-rodape">PRECISA DE AJUDA?</li>
+                    <li class="itens-lista"><a class="footer-link" href="">E-mail</a></li>
+                    <li class="itens-lista"><a class="footer-link" href="">Fale Conosco</a></li>
+                    <li class="itens-lista"><a class="footer-link" href="">Whatsapp</a></li>
+                    <li class="itens-lista"><a class="footer-link" href="">Assistência Online</a></li>
+                </ul>
+            </div>
+
+            <div class="secoes-rodape" id="siga-nos">
+                <ul class="itens-imagem">
+                    <li class="titulo-rodape">SIGA-NOS</li>
+                    <li class="logo-redes"><a class="footer-link" href=""><img src="/Amigo_Sangue_Bom/documentos/img/FacebookLogo.png"
+                                alt="facebook"></a></li>
+                    <li class="logo-redes"><a class="footer-link" href=""><img src="/Amigo_Sangue_Bom/documentos/img/YoutubeLogo.png"
+                                alt="youtube"></a></li>
+                    <li class="logo-redes"><a class="footer-link" href=""><img src="/Amigo_Sangue_Bom/documentos/img/TwitterLogo.png"
+                                alt="twitter"></a></li>
+                    <li class="logo-redes"><a class="footer-link" href=""><img src="/Amigo_Sangue_Bom/documentos/img/InstagramLogo.png"
+                                alt="instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <!----------MATEUS---------------- FOOTER ---------------------->
     <script type="text/javascript" src="modal.js"></script>
