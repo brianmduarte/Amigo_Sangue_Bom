@@ -1195,27 +1195,84 @@ footer ul {
     transition: all .3s;
 }
 
-.modal_cadastro {
-    display: none;
+#fade, #modal {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: #fff;
     border-radius: 7px;
     box-shadow: 1px 1px 10px #00000096;
-    max-width: 450px;
+    width: 450px;
+    max-width: 90%;
     padding: 20px;
-    top: 30px;
-    z-index: 6;
-    position: absolute;
-    margin-left: 25%;
-    
+    z-index: 10;
 }
 
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
+
+#modal h4 {
+    font-family: 'Lora';
+}
+
+/* Título do modal*/
+#modal-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Input container */
 .input-container,
 .button__wrapper {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     position: relative;
+    display: flex;
+}
+
+.icon_aws {
+    align-items: center;
+    display: flex;
+    margin-right: 5px;
+}
+
+.password-style span {
+    font-size: 14px;
+    font-family: 'Lora';
+}
+
+.password-style p {
+    font-size: 14px;
+    font-family: 'Lora';
+}
+
+.password-style p img {
+    width: 17px;
 }
 
 .button__wrapper {
@@ -1226,26 +1283,30 @@ footer ul {
 /* Input de texto */
 .input-field {
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     width: 430px;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 7px;
     border: 1px solid #ccc;
     outline: none;
     background-color: transparent;
     transition: all 0.3s ease;
+    font-family: 'Lora';
+    margin-left: 2%;
 }
 
 
 /* Linha embaixo do input */
 .input-highlight {
-
+    margin-bottom: 5px;
+    margin-left: 30px;
     position: absolute;
     bottom: 0;
     left: 0;
     height: 2px;
+    border-radius: 2px;
     width: 0;
     background-color: #A63539;
     transition: all 0.3s ease;
@@ -1259,7 +1320,8 @@ footer ul {
 }
 
 .input-field:focus~.input-highlight {
-    width: 100%;
+    width: 92%;
+    
 }
 
 /* remove as setinhas do input do tipo número */
@@ -1284,6 +1346,13 @@ input[type=number] {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    margin-top: 18px;
+}
+
+#accept-conditions {
+    font-family: 'Lora';
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .input-checkbox:hover {

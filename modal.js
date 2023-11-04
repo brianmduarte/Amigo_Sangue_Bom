@@ -1,19 +1,37 @@
-
-const modal_cadastro = document.getElementById("modal_cadastro");
-
-/*
-Simples função para mostrar e tirar um item da tela:
-
-se estiver como display "none", ao clicar no elemento desejado ele irá colocar como display "block",
-e assim por diante, se estiver em "block" se clicado novamente ele vai desaparecer colocando em display "none".
+/* Novas variáveis e funções para correção de modal. 
+* Adequações realizadas:
+- Centralização do modal;
+- Plano de fundo suavemente escurecido;
+- Modal responsivo e com efeito de transition; 
+- Modal agora acompanha a página inteira;
+- Correções no CSS; 
 */
 
-document.getElementById('login_signup').addEventListener('click', () => {
-    modal_cadastro.style.display = "block";
-})
-document.getElementById('cancel_signup').addEventListener('click', () => {
-    modal_cadastro.style.display = "none";
-})
+
+const openModalButton = document.querySelector("#login_signup");
+const closeModalButton = document.querySelector("#cancel_signup");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+
+const toggleModal = () => {
+    modal.classList.toggle("hide");
+    fade.classList.toggle("hide");
+};
+
+[openModalButton, closeModalButton, fade].forEach((el) => {
+    el.addEventListener("click", () => toggleModal());
+});
+
+// Área de Máscaras
+
+// Máscara de CPF
+$('#cpf_input').mask('000.000.000-00', {reverse: true});
+
+// Máscara de celular
+        $('#cellphone_input').mask('(00) 0 0000-0000');
+
+// Máscara de Data de nascimento
+        $('#born_input').mask('00/00/0000');
 
 
 // Função para validar CPF
@@ -225,3 +243,9 @@ function validarCadastro() {
     // Se todas as validações passarem, o formulário será enviado
     return alert('Usuário cadastrado com sucesso!');
 }
+
+
+
+
+
+       

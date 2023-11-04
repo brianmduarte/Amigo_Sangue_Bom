@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <script defer type="text/javascript" src="modal.js"></script>
+    <script defer type="text/javascript" src="index.js"></script>
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
@@ -23,83 +26,103 @@
 <body>
 
     <!-------------ERICK---------------- HEADER - NAV E MAIN -------------------->
-    <div class="modal_cadastro" id="modal_cadastro">
-
-        <h4 style="margin: 20px; text-align: left;">Cadastre-se :D</h4>
-
-        <div style="display: block;">
+    
+        <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div id="modal-title">
+            <h4 style="margin: 20px; text-align: center;">Cadastre-se </h4> 
+            <i class="fa-classic fa-smile-wink" style="color:#000000"></i>
+        </div>
 
             <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-user" style="color:#A63539"></i></div>
                 <input placeholder="Nome completo" class="input-field" type="text" id="name_input">
                 <span class="input-highlight"></span>
             </div>
 
             <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-envelope" style="color:#A63539"></i></div>
                 <input placeholder="Email" class="input-field" type="email" id="email_input">
                 <span class="input-highlight"></span>
                 <span class="red-error" id="wrong_email">Email inválido</span>
             </div>
 
             <div class="input-container">
-                <input placeholder="Telefone" class="input-field" type="number" id="cellphone_input">
+                <div class="icon_aws"><i class="fas fa-phone" style="color:#A63539"></i></div>
+                <input placeholder="Telefone" class="input-field" id="cellphone_input">
                 <span class="input-highlight"></span>
                 <span class="red-error" id="wrong_cellphone">Telefone inválido</span>
             </div>
 
             <div class="input-container">
-                <input placeholder="Data de nascimento" class="input-field" type="date" id="born_input">
+                <div class="icon_aws"><i class="fas fa-calendar-days" style="color:#A63539"></i></div>
+                <input placeholder="Data de nascimento" class="input-field" id="born_input">
                 <span class="input-highlight"></span>
                 <span class="red-error" id="wrong_borndate">Data de nascimento inválido</span>
             </div>
 
             <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-id-card" style="color:#A63539"></i></div>
                 <input placeholder="CPF" class="input-field" type="text" id="cpf_input">
                 <span class="input-highlight"></span>
                 <span class="red-error" id="wrong_cpf">CPF inválido</span>
             </div>
 
             <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-lock" style="color:#A63539"></i></div>
                 <input placeholder="Senha" class="input-field" type="password" id="password_input">
                 <span class="input-highlight"></span>
             </div>
-            <div class="input-container">
+
+            <div class="password-style">
+                <span> A senha deverá ter:</span>
+                <p> <img src="/documentos/img/marcacao.png" alt="checkbox">  Pelo menos uma letra maiúscula e uma letra minúscula</p>
+                <p> <img src="/documentos/img/marcacao.png" alt="checkbox"> Pelo menos um número</p>
+                <p> <img src="/documentos/img/marcacao.png" alt="checkbox"> Pelo menos um caractere especial</p>
+                <p> <img src="/documentos/img/marcacao.png" alt="checkbox"> Pelo menos 8 caracteres</p>
+            </div>
+
+                <div class="input-container">
                 <input placeholder="Confirme sua senha" class="input-field" type="password" id="repeat_password_input">
                 <span class="input-highlight"></span>
 
                 <span class="red-error" id="wrong_password">Senha não bate</span>
             </div>
 
+            
+                <input class="input-checkbox" type="checkbox" id="informacoes_reais">
+                <label for="informacoes_reais" id="accept-conditions">Eu declaro que as informações acima são veridicas e me responsabilizo por
+                    quaisquer dados inválidos</label>
+                <br>
+
+                <input class="input-checkbox" type="checkbox" id="termos_de_uso">
+                <label for="termos_de_uso" id="accept-conditions">Eu aceito os <span class="red-color">Termos de Uso</span> e a <span
+                        class="red-color">Política de privacidade</span> </label>
+                
+                <br>
+            
+                <input class="input-checkbox" type="checkbox" id="termos_noticias">
+                <label for="termos_noticias" id="accept-conditions">Eu aceito receber comunicados sobre campanhas de doação, assim como outras
+                    provenientes desde projeto via e-mail. <span class="red-color">(Opcional)</span></label>
+           
+                <br>
+
+            <div class="button__wrapper">
+                <button class="button__primary" type="submit" id="done_signup" onclick="validarCadastro()">Concluir</button>
+                <button class="button__secundary" type="submit" id="cancel_signup">Cancelar</button>
+            </div>
+
         </div>
         <!-- checkbox -->
 
-        <div style="display: block; margin-top: 50px; ">
 
-            <div class="input-container">
-                <input class="input-checkbox" type="checkbox" id="informacoes_reais">
-                <label for="input-checkbox">Eu declaro que as informações acima são veridicas e me responsabilizo por
-                    quaisquer dados inválidos</label>
-            </div>
-
-            <div class="input-container">
-
-                <input class="input-checkbox" type="checkbox" id="termos_de_uso">
-                <label for="input-checkbox">Eu aceito os <span class="red-color">Termos de Uso</span> e a <span
-                        class="red-color">Política de privacidade</span> </label>
-            </div>
-            <div class="input-container">
-                <input class="input-checkbox" type="checkbox" id="lerolero">
-                <label for="input-checkbox">Eu aceito receber comunicados sobre campanhas de doação, assim como outras
-                    provenientes desde projeto via e-mail. <span class="red-color">(Opcional)</span></label>
-            </div>
+            
 
         </div>
         <!-- <span class="red-error" id="accept_checkbox">Marque os itens obrigatórios</span> -->
 
-        <div class="button__wrapper">
-            <button class="button__primary" type="submit" id="done_signup" onclick="validarCadastro()">Concluir</button>
-            <button class="button__secundary" type="submit" id="cancel_signup">Cancelar</button>
+        
         </div>
-    </div>
     </div>
     <header>
 
@@ -180,7 +203,7 @@
 
 
 
-        <h2 id="title_estoque_blood"> Níveis em estoque </h2>
+        <h2 id="title_estoque_blood"> Níveis em estoque </h2> 
         <div class="container_nivel_estoque">
 
             <div class="title_estoque">
@@ -632,9 +655,12 @@
         </div>
     </footer>
 
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+    
     <!----------MATEUS---------------- FOOTER ---------------------->
-    <script type="text/javascript" src="modal.js"></script>
-    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
