@@ -1255,6 +1255,10 @@ footer ul {
     display: flex;
 }
 
+.button__wrapper {
+    margin-top: 30px;
+}
+
 .icon_aws {
     align-items: center;
     display: flex;
