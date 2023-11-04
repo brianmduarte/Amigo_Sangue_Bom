@@ -1261,14 +1261,22 @@ footer ul {
     margin-right: 5px;
 }
 
+.password-style {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
 .password-style span {
     font-size: 14px;
     font-family: 'Lora';
+    margin-bottom: -15px;
 }
 
 .password-style p {
     font-size: 14px;
     font-family: 'Lora';
+    margin-bottom: -5px;
 }
 
 .password-style p img {
