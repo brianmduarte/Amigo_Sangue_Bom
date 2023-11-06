@@ -40,6 +40,7 @@
                 <input placeholder="Nome completo" class="input-field" type="text" id="name_input">
                 <span class="input-highlight"></span>
             </div>
+            <span class="message-error">Campo obrigatório</span>
 
             <div class="input-container">
                 <div class="icon_aws"><i class="fas fa-envelope" style="color:#A63539"></i></div>
@@ -72,19 +73,21 @@
             <div class="input-container">
                 <div class="icon_aws"><i class="fas fa-lock" style="color:#A63539"></i></div>
                 <input placeholder="Senha" class="input-field" type="password" id="password_input">
-                <span class="input-highlight"></span>
+                <span class="password-progress-bar"></span>
             </div>
 
             <div class="password-style">
-                <span> A senha deverá ter:</span><br>
-                <p> <i class="fa-regular fa-circle-xmark" style="color:#969696"></i> Pelo menos uma letra maiúscula e uma letra minúscula</p>
-                <p> <i class="fa-regular fa-circle-xmark" style="color:#969696"></i> Pelo menos um número</p>
-                <p> <i class="fa-regular fa-circle-xmark" style="color:#969696"></i> Pelo menos um caractere especial</p>
-                <p> <i class="fa-regular fa-circle-xmark" style="color:#969696"></i> Pelo menos 8 caracteres</p>
+                
+                <div class="password-description">A senha deverá ter:</div><br>
+                <ul class="password-list">
+                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos uma letra maiúscula e uma letra minúscula</li>
+                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos um número</li>
+                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos um caractere especial</li>
+                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos 8 caracteres</li>
+                </ul>
+                <div class="password-line"></div>
             </div>
-            
     
-
             
                 <input class="input-checkbox" type="checkbox" id="informacoes_reais">
                 <label for="informacoes_reais" id="accept-conditions">Eu declaro que as informações acima são veridicas e me responsabilizo por

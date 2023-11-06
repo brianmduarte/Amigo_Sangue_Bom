@@ -1250,7 +1250,7 @@ footer ul {
 .input-container,
 .button__wrapper {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: -5px;
     position: relative;
     display: flex;
 }
@@ -1265,27 +1265,57 @@ footer ul {
     margin-right: 5px;
 }
 
+
+.message-error {
+    color: #d95150;
+    font-size: 10px;
+    margin-left: 30px;
+}
+
 .password-style {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
-.password-style span {
+.password-description {
     font-size: 14px;
     font-family: 'Lora';
     margin-bottom: -15px;
+    margin-left: 30px;
 }
 
-.password-style p {
+.password-style ul {
     font-size: 14px;
     font-family: 'Lora';
-    margin-bottom: -5px;
+    margin-bottom: -20px;
+    list-style: none;
 }
 
-.password-style p img {
-    width: 17px;
+.password-style li {
+    margin-bottom: 5px;
+} 
+
+
+.password-line {
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 25px;
 }
+
+.password-progress-bar {
+    margin-bottom: 5px;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    border-radius: 2px;
+    width: 93%;
+    background-color: #f3e24a;
+    transition: all 0.3s ease;
+}
+
 
 .button__wrapper {
     display: flex;
