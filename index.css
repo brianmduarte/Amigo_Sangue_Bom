@@ -39,16 +39,23 @@ header {
     height: 110px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /* backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px); */
-    background: rgba(255, 255, 255, 0.849);
+    background: rgba(226, 225, 225, 0.849);
     position: sticky;
     top: 0;
     transition: 0.3s;
     padding: 30px 0;
     z-index: 5;
 }
+
+
+.button_area {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .logo img {
     height: 80px;
@@ -109,7 +116,7 @@ a.nav-link {
 }
 
 #login_signup {
-    width: 150px;
+    width: 140px;
     height: 40px;
     padding: 5px;
     background: #A63539;
@@ -121,10 +128,13 @@ a.nav-link {
     font-style: 600;
     font-size: 1.0rem;
     margin-right: 5%;
+    margin-bottom: 5px;
 }
 
+
+
 #login_signup:hover {
-    background-color: #FBB6B6;
+    background: #a63539c5;
     transition: all .3s;
 }
 
@@ -165,6 +175,7 @@ iframe {
 
 .intro p {
     font-size: 3rem;
+    font-family: 'Ovo', sans-serif;
     text-align: right;
     width: 540px;
     margin-top: -30px;
@@ -277,8 +288,8 @@ iframe {
 }
 
 section.containerProjeto {
-    background-color: #F3F3F3;
-    padding: 100px 0 160px 0;
+    background-color: #fff;
+    padding: 15px 0 160px 0;
 }
 
 .projeto_title {
@@ -365,11 +376,11 @@ section.containerProjeto {
 .title_how_donate h1 {
     color: #ffffff;
     font-family: 'Ovo', serif;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 400;
     text-align: center;
-    margin-right: 45px;
-    padding-bottom: 26px;
+    padding-right: 25px;
+    margin: 0;
 }
 
 
@@ -383,12 +394,11 @@ section.containerProjeto {
 
 
 .subtitle_how_donate h2 {
-    width: 772px;
+    width: 80%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
+    font-size: 15px;
     font-style: bolder;
-    line-height: 110%;
     letter-spacing: 4.16px;
     text-transform: uppercase;
     color: #fff;
@@ -663,7 +673,7 @@ section.containerProjeto {
     color: #FFF;
     text-align: center;
     font-family: Roboto;
-    font-size: 28px;
+    font-size: 20px;
     font-style: normal;
     line-height: 110%;
     /* 30.8px */
@@ -691,18 +701,6 @@ section.containerProjeto {
     transition: ease 0.7s;
 }
 
-
-.line_section {
-    display: flex;
-    justify-content: end;
-    margin-top: 80px;
-}
-
-.line_section_main {
-    width: 75%;
-    height: 1px;
-    background-color: #ffffff8a;
-}
 
 .dot_area_agendamento {
     display: flex;
@@ -1550,7 +1548,7 @@ input[type="checkbox"]:checked::after {
 
     section.containerProjeto {
         background-color: #F3F3F3;
-        padding: 70px 0 95px 0;
+        padding: 15px 0 95px 0;
     }
 
     .projeto_title h1 {
@@ -2076,8 +2074,8 @@ input[type="checkbox"]:checked::after {
     }
 
     section.containerProjeto {
-        background-color: #F3F3F3;
-        padding: 70px 0 95px 0;
+        background-color: #fff;
+        padding: 15px 0 95px 0;
     }
 
     .projeto_title h1 {
@@ -2262,7 +2260,7 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 335vh;
+        height: 130vh;
     }
 
     .dot_area_agendamento {
@@ -2557,8 +2555,8 @@ input[type="checkbox"]:checked::after {
     }
 
     section.containerProjeto {
-        background-color: #F3F3F3;
-        padding: 70px 0 160px 0;
+        background-color: #fff;
+        padding: 15px 0 160px 0;
     }
 
     .projeto_title h1 {
@@ -2722,7 +2720,7 @@ input[type="checkbox"]:checked::after {
     }
 
     .validation_text h4 {
-        font-size: 22px;
+        font-size: 15px;
     }
 
     #validation_button {
@@ -2734,15 +2732,15 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 300vh;
+        height: 150vh;
     }
 
     .title_how_donate h1 {
-        font-size: 55px;
+        font-size: 45px;
     }
 
     .subtitle_how_donate h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .button_main button {
@@ -2979,8 +2977,8 @@ input[type="checkbox"]:checked::after {
     }
 
     section.containerProjeto {
-        background-color: #F3F3F3;
-        padding: 70px 0 160px 0;
+        background-color: #fff;
+        padding: 15px 0 160px 0;
     }
 
     .projeto_title h1 {
@@ -3126,7 +3124,7 @@ input[type="checkbox"]:checked::after {
     }
 
     .validation_text h4 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     #validation_button {
@@ -3138,15 +3136,15 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 300vh;
+        height: 165vh;
     }
 
     .title_how_donate h1 {
-        font-size: 55px;
+        font-size: 45px;
     }
 
     .subtitle_how_donate h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .button_main button {
@@ -3233,9 +3231,6 @@ input[type="checkbox"]:checked::after {
         border-radius: 7px;
     }
 
-    .Cont {
-        height: 780px;
-    }
 
 
     footer {
@@ -3432,7 +3427,7 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 300vh;
+        height: 170vh;
     }
 
     .camp_area {
@@ -3586,7 +3581,7 @@ input[type="checkbox"]:checked::after {
 
 
     .how_donate {
-        height: 300vh;
+        height: 170vh;
     }
 
 

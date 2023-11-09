@@ -25,7 +25,7 @@
 
 <body>
 
-    <!-------------ERICK---------------- HEADER - NAV E MAIN -------------------->
+    <!------------- ÁREA DO MODAL (DEVE CONTER EM TODAS AS PÁGINAS) ------------------->
     
         <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
@@ -112,15 +112,16 @@
             </div>
 
         </div>
-        <!-- checkbox -->
+        <!------------- FINAL ÁREA DO MODAL (DEVE CONTER EM TODAS AS PÁGINAS) ------------------->
 
         
     </div>
+
     <header>
 
 
         <div class="logo">
-            <a href="#initial_page"><img src="documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
+            <a href="/index.html"><img src="documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
         </div>
         <ul class="nav-bar">
             <li><a class="nav-link" href="/about_project.html">Sobre o projeto</a></li>
@@ -129,13 +130,9 @@
             <li><a class="nav-link" href="/campaign_area.html">Campanhas</a></li>
             <li><a class="nav-link" href="/contact_us_area.html">Fale conosco</a></li>
         </ul>
-        
-        <div class="button_area">
-            <button class="button__primary" id="login_signup">CADASTRE-SE</button>
-            <button class="button__primary" id="login_signup">LOGIN</button>
-        </div>
+        <button class="button__primary" id="login_signup">CADASTRE-SE</button>
 
-        <!-- favor não mudar essa div 'hamburguer' -->
+        
         <div class="hamburger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -145,39 +142,96 @@
 
     </header>
 
-    <main>
-        <div class="container">
-            <div class="coluna1">
-                <div class="intro">
-                    <p id="initial_page">Salve vidas!</p>
-                    <p>Doe <span>sangue</span>.</p>
+    <section class="how_donate">
 
-                </div>
-                <div class="intro_text">
-
-                    <p>Você sabia que é possível fazer a diferença na vida de uma pessoa com apenas um clique?</p>
-                    <p>O Amigo Sangue Bom tem o propósito de usar a tecnologia para contribuir com o aumento de doadores
-                        no
-                        Brasil. Para que isso seja possível, contamos com a sua ajuda!</p>
-                    <p>Veja ao lado a importância da doação de sangue.</p>
-                </div>
-            </div>
-            <div class="coluna2">
-                <iframe width="550" height="350"
-                    src="https://www.youtube.com/embed/GP3t-zugUZA?si=kEgZHGzGY0cMx_EY&amp;start=0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe><!-- div apenas de exemplo antes do video -->
+        <!----------------------- TÍTULO DA SEÇÃO -------------->
+        <div class="dot_area">
+            <div class="dot_icon"></div>
+            <div class="title_how_donate">
+                <h1 id="title-02">COMO DOAR</h1>
             </div>
         </div>
-    </main>
 
 
+        <!----------------------- SUBTÍTULO DA SEÇÃO -------------->
+        <div class="subtitle_how_donate">
+            <h2>VEJA ABAIXO OS PRINCIPAIS PRÉ-REQUISITOS PARA A DOAÇÃO DE SANGUE</h2>
+        </div>
+
+        <!-------------------- ÁREA DE DIAGRAMA ----------->
+        <div class="steps_area">
+            <div class="steps_area_form">
+                <div class="steps_left">
+                    <div class="step_text_area1">
+                        <h4>Ter entre 16 a 69 anos de idade.</h4>
+                    </div>
+                    <div class="step_line_area1"></div>
+
+                    <div class="step_text_area3">
+                        <h4>Estar bem hidratado.</h4>
+                    </div>
+                    <div class="step_line_area3"></div>
+
+                    <div class="step_text_area5">
+                        <h4>Estar descansado, considerando um período de sono mínimo de 4 horas.</h4>
+                    </div>
+                    <div class="step_line_area5"></div>
+                </div>
+                <div class="steps_center">
+                    <div class="circle_icon">
+                        <h4>1</h4>
+                    </div>
+                    <div class="circle_icon">
+                        <h4>2</h4>
+                    </div>
+                    <div class="circle_icon">
+                        <h4>3</h4>
+                    </div>
+                    <div class="circle_icon">
+                        <h4>4</h4>
+                    </div>
+                    <div class="circle_icon">
+                        <h4>5</h4>
+                    </div>
+                </div>
+                <div class="steps_right">
+                    <div class="step_line_area2"></div>
+                    <div class="step_text_area2">
+                        <h4>É necessário estar em jejum? Não. Para doação de sangue priorizar alimentos leves. Em casos
+                            ter feito alimentação compostas por alimentos mais gordurosos, aguardar no minino 3 horas.
+                        </h4>
+                    </div>
+
+                    <div class="step_line_area4"></div>
+                    <div class="step_text_area4">
+                        <h4>Intervalo para mulheres de 90 dias e para homens a cada 60 dias.</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!------------- ÁREA DE VALIDAÇÃO DE REQUISITOS------------>
+        <div class="validation_area">
+            <div class="validation_text">
+                <h4>Quer saber se você está elegível à doação? Clique no botão abaixo.</h4>
+            </div>
+            <button id="validation_button"> Validar </button>
+        </div>
+
+        <div class="line_section">
+            <div class="line_section_main"></div>
+        </div>
+        
+
+    </section>
+
+
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
  
-    <!----------MATEUS---------------- FOOTER ---------------------->
 </body>
 </html>
-

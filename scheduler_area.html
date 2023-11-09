@@ -25,7 +25,7 @@
 
 <body>
 
-    <!-------------ERICK---------------- HEADER - NAV E MAIN -------------------->
+    <!------------- ÁREA DO MODAL (DEVE CONTER EM TODAS AS PÁGINAS) ------------------->
     
         <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
@@ -112,15 +112,16 @@
             </div>
 
         </div>
-        <!-- checkbox -->
+        <!------------- FINAL ÁREA DO MODAL (DEVE CONTER EM TODAS AS PÁGINAS) ------------------->
 
         
     </div>
+
     <header>
 
 
         <div class="logo">
-            <a href="#initial_page"><img src="documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
+            <a href="/index.html"><img src="documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
         </div>
         <ul class="nav-bar">
             <li><a class="nav-link" href="/about_project.html">Sobre o projeto</a></li>
@@ -129,13 +130,9 @@
             <li><a class="nav-link" href="/campaign_area.html">Campanhas</a></li>
             <li><a class="nav-link" href="/contact_us_area.html">Fale conosco</a></li>
         </ul>
-        
-        <div class="button_area">
-            <button class="button__primary" id="login_signup">CADASTRE-SE</button>
-            <button class="button__primary" id="login_signup">LOGIN</button>
-        </div>
+        <button class="button__primary" id="login_signup">CADASTRE-SE</button>
 
-        <!-- favor não mudar essa div 'hamburguer' -->
+        
         <div class="hamburger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -145,39 +142,83 @@
 
     </header>
 
-    <main>
-        <div class="container">
-            <div class="coluna1">
-                <div class="intro">
-                    <p id="initial_page">Salve vidas!</p>
-                    <p>Doe <span>sangue</span>.</p>
+    <section class="how_donate">
 
-                </div>
-                <div class="intro_text">
 
-                    <p>Você sabia que é possível fazer a diferença na vida de uma pessoa com apenas um clique?</p>
-                    <p>O Amigo Sangue Bom tem o propósito de usar a tecnologia para contribuir com o aumento de doadores
-                        no
-                        Brasil. Para que isso seja possível, contamos com a sua ajuda!</p>
-                    <p>Veja ao lado a importância da doação de sangue.</p>
-                </div>
-            </div>
-            <div class="coluna2">
-                <iframe width="550" height="350"
-                    src="https://www.youtube.com/embed/GP3t-zugUZA?si=kEgZHGzGY0cMx_EY&amp;start=0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe><!-- div apenas de exemplo antes do video -->
+        <div class="dot_area_agendamento">
+            <div class="dot_icon"></div>
+            <div class="title_how_donate">
+                <h1 id="title-03">AGENDAMENTO</h1>
             </div>
         </div>
-    </main>
 
+        <div class="schedular_area">
+            <div class="schedular_left">
 
+                <div class="calendar_main">
+                    <div class="calendar">
+                        <div class="month">Outubro 2023</div>
+                        <div class="days">
+                            <div class="week">D</div>
+                            <div class="week">S</div>
+                            <div class="week">T</div>
+                            <div class="week">Q</div>
+                            <div class="week">Q</div>
+                            <div class="week">S</div>
+                            <div class="week">S</div>
+                            <div class="dayoff">29</div>
+                            <div class="dayoff">30</div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button_main"><button>Agendar</button></div>
+            </div>
+            <div class="schedular_right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7502.07054340623!2d-43.995961457785484!3d-19.922918425855517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spuc%20minas%20eucaristico!5e0!3m2!1spt-BR!2sbr!4v1696985356185!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
  
-    <!----------MATEUS---------------- FOOTER ---------------------->
 </body>
 </html>
-
