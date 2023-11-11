@@ -38,41 +38,43 @@
             <div class="input-container">
                 <div class="icon_aws"><i class="fas fa-user" style="color:#A63539"></i></div>
                 <input placeholder="Nome completo" class="input-field" type="text" id="name_input">
-                <span class="input-highlight"></span>
             </div>
             <span class="message-error">Campo obrigatório</span>
 
             <div class="input-container">
                 <div class="icon_aws"><i class="fas fa-envelope" style="color:#A63539"></i></div>
                 <input placeholder="Email" class="input-field" type="email" id="email_input">
-                <span class="input-highlight"></span>
                 <span class="red-error" id="wrong_email">Email inválido</span>
             </div>
+            <span class="message-error">Campo obrigatório</span>
 
             <div class="input-container">
                 <div class="icon_aws"><i class="fas fa-phone" style="color:#A63539"></i></div>
                 <input placeholder="Telefone" class="input-field" id="cellphone_input">
-                <span class="input-highlight"></span>
                 <span class="red-error" id="wrong_cellphone">Telefone inválido</span>
             </div>
+            <span class="message-error">Campo obrigatório</span>
 
             <div class="input-container">
                 <div class="icon_aws"><i class="fas fa-calendar-days" style="color:#A63539"></i></div>
                 <input placeholder="Data de nascimento" class="input-field" id="born_input">
-                <span class="input-highlight"></span>
                 <span class="red-error" id="wrong_borndate">Data de nascimento inválido</span>
             </div>
+            <span class="message-error">Campo obrigatório</span>
 
             <div class="input-container">
                 <div class="icon_aws"><i class="fas fa-id-card" style="color:#A63539"></i></div>
                 <input placeholder="CPF" class="input-field" type="text" id="cpf_input">
-                <span class="input-highlight"></span>
                 <span class="red-error" id="wrong_cpf">CPF inválido</span>
             </div>
+            <span class="message-error">Campo obrigatório</span>
 
             <div class="input-container">
+                
                 <div class="icon_aws"><i class="fas fa-lock" style="color:#A63539"></i></div>
+                
                 <input placeholder="Senha" class="input-field" type="password" id="password_input">
+                <div class="icon_aws submit-lente"><i class="fas fa-eye" style="color:#A63539"></i></div>
                 <span class="password-progress-bar"></span>
             </div>
 
@@ -80,10 +82,10 @@
                 
                 <div class="password-description">A senha deverá ter:</div><br>
                 <ul class="password-list">
-                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos uma letra maiúscula e uma letra minúscula</li>
-                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos um número</li>
-                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos um caractere especial</li>
-                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos 8 caracteres</li>
+                    <li class="password-item"><i class="fas"></i> Pelo menos uma letra maiúscula e uma letra minúscula</li>
+                    <li class="password-item"><i class="fas"></i> Pelo menos um número</li>
+                    <li class="password-item"><i class="fas"></i> Pelo menos um caractere especial</li>
+                    <li class="password-item"><i class="fas"></i> Pelo menos 8 caracteres</li>
                 </ul>
                 <div class="password-line"></div>
             </div>
@@ -93,19 +95,19 @@
                 <label for="informacoes_reais" id="accept-conditions">Eu declaro que as informações acima são veridicas e me responsabilizo por
                     quaisquer dados inválidos</label>
                 <br>
-
+                
                 <input class="input-checkbox" type="checkbox" id="termos_de_uso">
                 <label for="termos_de_uso" id="accept-conditions">Eu aceito os <span class="red-color">Termos de Uso</span> e a <span
                         class="red-color">Política de privacidade</span> </label>
                 
                 <br>
-            
+                
                 <input class="input-checkbox" type="checkbox" id="termos_noticias">
                 <label for="termos_noticias" id="accept-conditions">Eu aceito receber comunicados sobre campanhas de doação, assim como outras
                     provenientes desde projeto via e-mail. <span class="red-color">(Opcional)</span></label>
-           
+                    
                 <br>
-
+                
             <div class="button__wrapper">
                 <button class="button__primary" type="submit" id="done_signup" onclick="validarCadastro()">Concluir</button>
                 <button class="button__secundary" type="submit" id="cancel_signup">Cancelar</button>
@@ -135,7 +137,7 @@
             <button class="button__primary" id="login_signup">LOGIN</button>
         </div>
 
-        <!-- favor não mudar essa div 'hamburguer' -->
+        
         <div class="hamburger">
             <div class="line1"></div>
             <div class="line2"></div>

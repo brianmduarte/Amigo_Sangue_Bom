@@ -1187,9 +1187,13 @@ footer ul {
     color: #000;
 }
 
-.button__primary:hover,
+.button__primary:hover {
+    background: #a63539c5;
+    transition: all .3s;
+}
+
 .button__secundary:hover {
-    background-color: #FBB6B6;
+    background: #fbb6b6c5;
     transition: all .3s;
 }
 
@@ -1261,13 +1265,26 @@ footer ul {
     align-items: center;
     display: flex;
     margin-right: 5px;
+    font-size: 14px;
 }
 
 
+.icon_aws.submit-lente i {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
 .message-error {
     color: #d95150;
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 30px;
+    margin-top: 2px;
+    display: none;
 }
 
 .password-style {
@@ -1282,6 +1299,11 @@ footer ul {
     font-family: 'Lora';
     margin-bottom: -15px;
     margin-left: 30px;
+    color: #a8a9aa;
+}
+
+.password-item {
+    color: #a8a9aa;
 }
 
 .password-style ul {
@@ -1309,11 +1331,22 @@ footer ul {
     left: 0;
     height: 2px;
     border-radius: 2px;
-    width: 93%;
+    width: 0;
     background-color: #f3e24a;
     transition: all 0.3s ease;
 }
 
+.password-item.checked {
+    color: #81bc3a;
+}
+
+.password-item .fas::before {
+    content: "\f057";
+}
+
+.password-item.checked .fas::before {
+    content: "\f058";
+}
 
 .button__wrapper {
     display: flex;
@@ -1322,7 +1355,6 @@ footer ul {
 
 /* Input de texto */
 .input-field {
-    display: block;
     max-width: 90%;
     width: 430px;
     margin: 5px 0;
@@ -1337,32 +1369,11 @@ footer ul {
     margin-left: 2%;
 }
 
-
-/* Linha embaixo do input */
-.input-highlight {
-    margin-bottom: 5px;
-    margin-left: 30px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    border-radius: 2px;
-    width: 0;
-    background-color: #A63539;
-    transition: all 0.3s ease;
+.input-field.error {
+    border-color: #d95150;
 }
 
-/* Input field:focus styles */
-.input-field:focus+.input-label {
-    top: -15px;
-    font-size: 12px;
-    color: #A63539;
-}
 
-.input-field:focus~.input-highlight {
-    width: 92%;
-    
-}
 
 /* remove as setinhas do input do tipo número */
 input::-webkit-outer-spin-button,
