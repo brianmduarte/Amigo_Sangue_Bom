@@ -1254,7 +1254,7 @@ footer ul {
     margin-top: 5px;
     margin-bottom: -5px;
     position: relative;
-    display: flex;
+    display: block;
 }
 
 .button__wrapper {
@@ -1263,20 +1263,22 @@ footer ul {
 
 .icon_aws {
     align-items: center;
-    display: flex;
-    margin-right: 5px;
+    margin-top: 16px;
     font-size: 14px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
 }
 
 
-.icon_aws.submit-lente i {
+.submit-lente i {
     position: absolute;
     cursor: pointer;
     top: 0;
     right: 0;
     z-index: 10;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 18px;
+    margin-right: 10px;
 }
 
 .message-error {
@@ -1366,7 +1368,7 @@ footer ul {
     background-color: transparent;
     transition: all 0.3s ease;
     font-family: 'Lora';
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .input-field.error {

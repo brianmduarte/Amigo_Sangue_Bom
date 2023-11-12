@@ -1,13 +1,4 @@
-/* Novas variáveis e funções para correção de modal. 
-* Adequações realizadas:
-- Centralização do modal;
-- Plano de fundo suavemente escurecido;
-- Modal responsivo e com efeito de transition; 
-- Modal agora acompanha a página inteira;
-- Correções no CSS; 
-*/
-
-
+// ---------------------- Área do Modal ----------------------//
 const openModalButton = document.querySelector("#login_signup");
 const closeModalButton = document.querySelector("#cancel_signup");
 const modal = document.querySelector("#modal");
@@ -22,16 +13,124 @@ const toggleModal = () => {
     el.addEventListener("click", () => toggleModal());
 });
 
-// Área de Máscaras
+// ---------------------- Área de Máscaras ----------------------//
 
 // Máscara de CPF
-$('#cpf_input').mask('000.000.000-00', {reverse: true});
+    $('#cpf_input').mask('000.000.000-00', {reverse: true});
 
 // Máscara de celular
-        $('#cellphone_input').mask('(00) 0 0000-0000');
+    $('#cellphone_input').mask('(00) 0 0000-0000');
 
 // Máscara de Data de nascimento
-        $('#born_input').mask('00/00/0000');
+    $('#born_input').mask('00/00/0000');
+
+
+
+// ---------------------- Área de Validações ---------------------- //
+
+(() => {
+    const form = document.querySelector('[data-form]')
+    const fields = {}
+    
+    const showMessageError = (field, message) => {
+        const { element, errorElement } = field
+        element.classList.add('error')
+        errorElement.style.display = 'block'
+        errorElement.textContent = message
+    }
+
+    const hideMessageError = (field) => {
+        const { element, errorElement } = field
+        element.classList.remove('error')
+        errorElement.style.display = 'none'
+        errorElement.textContent = ''
+    }
+
+
+    const validateRequiredFields = () => {
+        let isInValid = false
+        for (const fieldKey in fields) {
+            const field = fields[fieldKey]
+            const { element, errorElement, isRequired } = field
+            if((!element.value || (fieldKey === 'termos' && !element.checked)) && isRequired) {
+                isInValid = true
+                showMessageError(field, 'Este campo é obrigatório!')
+            }
+        }
+
+        return isInValid
+    }
+
+    const onInputFocus = (event) => {
+        const field = fields[event.target.name]
+        hideMessageError(field)
+    }
+
+
+    const onFormSubmit = (event) => {
+        event.preventDefault()
+        if(validateRequiredFields ()) return
+        alert('Cadastro realizado com sucesso!')
+    }
+     
+    const setListeners = () => {
+        form.addEventListener('submit', onFormSubmit)
+        for (const fieldKey in fields) {
+            const { element }= fields[fieldKey]
+            element.addEventListener('focus', onInputFocus)
+        }
+    }
+    
+    const setFieldElements = () => {
+        const inputElements = document.querySelectorAll('[data-input]')
+        for (const input of inputElements) {
+            const inputName = input.getAttribute('name')
+            fields[inputName] = {
+                element: input, 
+                errorElement: input.parentElement.querySelector('[data-error-message]'),
+                isRequired: input.hasAttribute('required')
+            }
+            input.removeAttribute('required')
+        }
+        
+        console.log(fields)
+    }
+
+    const init = () => {
+        setFieldElements()
+        setListeners()
+    }
+
+    init()
+
+}) ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Função para validar CPF
