@@ -1379,7 +1379,7 @@ readers do not read off random characters that represent icons */
 .fa-users::before {
   content: "\f0c0"; }
 
-.fa-eye-slash::before {
+.fa-eye.slash::before {
   content: "\f070"; }
 
 .fa-flask-vial::before {

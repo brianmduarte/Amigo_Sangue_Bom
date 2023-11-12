@@ -1325,18 +1325,33 @@ footer ul {
     margin-top: 25px;
 }
 
-.password-progress-bar {
-    margin-bottom: 5px;
-    margin-left: 30px;
+.password-progressbar {
+    margin-bottom: 4px;
+    margin-left: 28px;
     position: absolute;
     bottom: 0;
     left: 0;
     height: 2px;
     border-radius: 2px;
     width: 0;
-    background-color: #f3e24a;
     transition: all 0.3s ease;
 }
+
+.password-progressbar[data-percentage= "23"]{
+    background-color: #d95150;
+}
+
+.password-progressbar[data-percentage= "45"],
+.password-progressbar[data-percentage= "78"]{
+    background-color: #f3e24a;
+}
+
+.password-progressbar[data-percentage= "92"]{
+    background-color: #81bc3a;
+}
+
+
+
 
 .password-item.checked {
     color: #81bc3a;
