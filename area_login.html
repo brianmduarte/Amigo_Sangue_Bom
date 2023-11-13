@@ -30,13 +30,18 @@
             <input placeholder="Insira um email" class="input-field" type="email" id="email_input">
         </div>
         <div class="input-container">
-                <div class="icon_aws"><i class="fas fa-lock" style="color:#A63539"></i></div>
-                <input placeholder="Senha" class="input-field" type="password" id="password_input">
-            </div>
+            <div class="icon_aws"><i class="fas fa-lock" style="color:#A63539"></i></div>
+            <input placeholder="Senha" class="input-field" type="password" id="password_input">
+            <div class="submit-lente"><i class="fas fa-eye slash" data-password-eye style="color:#A63539"></i></div>
+        </div>
             <input class="input-checkbox" type="checkbox" id="manter-conectado">
-                <label for="informacoes_reais" id="accept-conditions">Mantenha-me conectado</label>
-                <div class="button__wrapper">
-                    <button class="button__primary" type="submit" id="done_signup" onclick="validarCadastro()">Concluir</button>
+            <label for="save_password" id="accept-conditions">Mantenha-me conectado</label>
+            <div> <br> <br>
+                <span><a class="red-color">Esqueci a minha senha.</a></span> <br>
+                <label for="cadastro"><span>Não tem uma conta ainda? <a  class="red-color">cadastre-se aqui.</a></span></label>
+            </div>
+            <div class="button__wrapper">
+                <button class="button__primary" type="submit" id="done_signup" >Concluir</button>
                     <button class="button__secundary" type="submit" id="cancel_signup">Cancelar</button>
                 </div>
             </body>
