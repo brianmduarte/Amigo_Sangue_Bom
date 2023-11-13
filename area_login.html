@@ -1,49 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="background-default">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="teste-login-area.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <title>Amigo Sangue Bom | Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> <!-- fonte Inter -->
+
+    <script defer type="text/javascript" src="js/modal.js"></script>
+    <script defer type="text/javascript" src="js/index.js"></script>
+    <script defer type="text/javascript" src="js/show-password.js"></script>
+
+
+    <title>Amigo Sangue Bom | Login </title>
+
+    
 </head>
+
 <body>
-
-    <header>
-
-
-        <div class="logo">
-            <a href="#initial_page"><img src="documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
-        </div>
-
-
-    </header>
-
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
         <div id="modal-title">
-            <h4 style="margin: 20px; text-align: center;">Login</h4> 
+            <h4 style="margin: 20px; text-align: center;">Cadastre-se </h4> 
             <i class="fa-classic fa-smile-wink" style="color:#000000"></i>
+            
         </div>
-        <div class="input-container">
-            <div class="icon_aws"><i class="fas fa-envelope" style="color:#A63539"></i></div>
-            <input placeholder="Insira um email" class="input-field" type="email" id="email_input">
-        </div>
-        <div class="input-container">
-            <div class="icon_aws"><i class="fas fa-lock" style="color:#A63539"></i></div>
-            <input placeholder="Senha" class="input-field" type="password" id="password_input">
-        </div>
-            <input class="input-checkbox" type="checkbox" id="manter-conectado">
-            <label for="save_password" id="accept-conditions">Mantenha-me conectado</label><br> <br> 
-            <span class="forgot_password"><a class="red-color">Esqueci a senha.</a></span> <br>
-            <label for="cadastro" class="criar-cadastro"><span>Não tem uma conta ainda? <a  class="red-color">cadastre-se aqui.</a></span></label>
-            <div class="button__wrapper">
-                <button class="button__primary" type="submit" id="done_signup" >Concluir</button>
-                <button class="button__secundary" type="submit" id="cancel_signup">Cancelar</button>
+
+        <form class="form" data-form>
+                <div class="input-container">
+                    <div class="icon_aws"><i class="fas fa-user" style="color:#A63539"></i></div>
+                    <input placeholder="Nome completo" name="nome" class="input-field" type="text" id="name_input" required data-input>
+                    <span class="message-error" data-error-message>Campo obrigatório</span>
+                </div>
+                
+
+                <div class="input-container">
+                    <div class="icon_aws"><i class="fas fa-envelope" style="color:#A63539"></i></div>
+                    <input placeholder="Email" name="email" class="input-field" type="email" id="email_input" required data-input>
+                    <span class="red-error" id="wrong_email">Email inválido</span>
+                    <span class="message-error" data-error-message>Campo obrigatório</span>
+                </div>
+                
+
+                <div class="input-container">
+                    <div class="icon_aws"><i class="fas fa-phone" style="color:#A63539"></i></div>
+                    <input placeholder="Telefone" name="telefone" class="input-field" id="cellphone_input" required data-input>
+                    <span class="red-error" id="wrong_cellphone">Telefone inválido</span>
+                    <span class="message-error" data-error-message>Campo obrigatório</span>
+                </div>
+                
+
+                <div class="input-container">
+                    <div class="icon_aws"><i class="fas fa-calendar-days" style="color:#A63539"></i></div>
+                    <input placeholder="Data de nascimento" name="data" class="input-field" id="born_input" required data-input>
+                    <span class="red-error" id="wrong_borndate">Data de nascimento inválido</span>
+                    <span class="message-error" data-error-message>Campo obrigatório</span>
+                </div>
+                
+
+                <div class="input-container">
+                    <div class="icon_aws"><i class="fas fa-id-card" style="color:#A63539"></i></div>
+                    <input placeholder="CPF" name="cpf" class="input-field" type="text" id="cpf_input" required data-input>
+                    <span class="red-error" id="wrong_cpf">CPF inválido</span>
+                    <span class="message-error" data-error-message>Campo obrigatório</span>
+                </div>
+                
+
+                <div class="input-container">
+
+                    <div class="icon_aws"><i class="fas fa-lock" style="color:#A63539"></i></div>
+
+                    <input placeholder="Senha" name="password" class="input-field" type="password" required data-input>
+                    <div class="submit-lente"><i class="fas fa-eye slash" data-password-eye style="color:#A63539"></i></div>
+                    <span class="password-progressbar" data-password-progressbar data-percentage="0"></span>
+                    <span class="message-error" data-error-message>Campo obrigatório</span>
+                </div>
+
+                <div class="password-style">
+
+                    <div class="password-description">A senha deverá ter:</div><br>
+                    <ul class="password-list">
+                        <li class="password-item" data-password-item="lowerUpperCase"><i class="fas"></i> Pelo menos 1 letra maiúscula e 1 letra minúscula</li>
+                        <li class="password-item" data-password-item="number"><i class="fas"></i> Pelo menos 1 número</li>
+                        <li class="password-item" data-password-item="specialCharacter"><i class="fas"></i> Pelo menos 1 caractere especial</li>
+                        <li class="password-item" data-password-item="minCharacter"><i class="fas"></i> Pelo menos 8 caracteres</li>
+                    </ul>
+                    <div class="password-line"></div>
+                </div>
+            
+
+                    <input class="input-checkbox" name="termos" type="checkbox" id="informacoes_reais" required data-input>
+                    <label for="informacoes_reais" id="accept-conditions">Eu declaro que as informações acima são veridicas e me responsabilizo por
+                        quaisquer dados inválidos</label>
+                        <span class="message-error" data-error-message>Campo obrigatório</span>
+                    <br>
+                    
+                    <input class="input-checkbox" name="termos" type="checkbox" id="termos_de_uso" required data-input>
+                    <label for="termos_de_uso" id="accept-conditions">Eu aceito os <span class="red-color">Termos de Uso</span> e a <span
+                            class="red-color">Política de privacidade</span> </label>
+                            <span class="message-error" data-error-message>Campo obrigatório</span>
+                    <br>
+                    
+                    <input class="input-checkbox" name="termos" type="checkbox" id="termos_noticias" required data-input>
+                    <label for="termos_noticias" id="accept-conditions">Eu aceito receber comunicados sobre campanhas de doação, assim como outras
+                        provenientes desde projeto via e-mail. <span class="red-color">(Opcional)</span></label>
+
+                    <br>
+                    
+                <div class="button__wrapper">
+                    <button class="button__primary" type="submit" id="done_signup" onclick="validarCadastro()">Concluir</button>
+                    <button class="button__secundary" type="submit" id="cancel_signup">Cancelar</button>
+                </div>
+
             </div>
+        </form>
+        <!-- checkbox -->
+
+        
+    </div>
+    <header>
+
+
+        
+        <ul class="nav-bar">
+            <li><a class="nav-link" href="/index.html">Início</a></li>
+            <li><a class="nav-link" href="/about_project.html">Sobre o projeto</a></li>
+            <li><a class="nav-link" href="/how_donate.html">Como doar</a></li>
+            <li><a class="nav-link" href="/scheduler_area.html">Agendamento</a></li>
+            <li><a class="nav-link" href="/campaign_area.html">Campanhas</a></li>
+            <li><a class="nav-link" href="/contact_us_area.html">Fale conosco</a></li>
+        </ul>
+        <button class="button__primary" id="login_signup">CADASTRE-SE</button>
+
+        
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </header>
+
+
+    
+        <form class="login-page">
+            
+            <div class="login-form">
+                <div id="modal-title">
+                    <div>
+                        <img src="documentos/img/logoprojeto.png" width="145px" height="80px" alt="Amigo Sangue Bom">
+                    </div>
+                </div>
+                <p class="welcome-friend"> Bem-Vindo, <span style="color:#A63539">Amigo!</span></p>
+                <div class="login-container">
+                    <div class="icon_aws"><i class="fas fa-user" style="color:#A63539"></i></div>
+                    <input placeholder="Nome de Usuário" name="nome" class="input-field" type="text">
+
+                </div>
+
+                <div class="login-container">
+                    <div class="icon_aws"><i class="fas fa-lock" style="color:#A63539"></i></div>
+                    <input placeholder="Senha" name="password" class="input-field" type="password">
+                </div>
+
+                <div class="conected">
+                    <input class="input-checkbox" name="conectado" type="checkbox" id="login-label">
+                    <label for="login-label" id="accept-conditions">Manter-me conectado</label>
+
+                    <div class="forgot-password">
+                        Esqueceu a senha? <a href="#">Clique aqui</a>
+                    </div>
+                </div>
+
+                <div class="area_button_login">
+                    <button class="login_button" type="submit">Login</button>
+                </div>
+            
             </div>
-            </body>
+
+
+        </form>
+    
+
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+</body>
             
     
 </html>

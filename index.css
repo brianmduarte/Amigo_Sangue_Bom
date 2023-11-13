@@ -51,11 +51,90 @@ header {
 }
 
 
+.background-default {
+    background-color: #BE8F90;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 920px
+}
+
+.login-form {
+    max-width: 470px;
+    width: 95%;
+    height: 420px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px #00000096;
+    padding: 20px;
+}
+
+.login-container {
+    margin-top: 15px;
+    
+}
+
+.welcome-friend {
+    font-size: 'Lora';
+    text-align: center;
+    color: #adabab;
+}
+
+
+.conected {
+    margin-left: 25px;
+    text-align: left;
+}
+
+.forgot-password {
+    font-size: 'Lora';
+    text-align: center;
+    color: #828282;
+    margin-top: 25px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #A63539;
+}
+
 .button_area {
     display: flex;
     flex-direction: column;
 }
 
+.area_button_login {
+    display: flex;
+    justify-content: center;
+}
+
+.login_button {
+    width: 130px;
+    height: 35px;
+    padding: 5px;
+    margin-top: 20px;
+    background: #A63539;
+    color: #fff;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-style: 600;
+    font-size: 1.0rem;
+    margin-right: 5%;
+}
+
+.login_button:hover {
+    background: #a63539c5;
+    transition: all .3s;
+}
 
 .logo img {
     height: 80px;
@@ -1486,6 +1565,7 @@ input[type=number] {
     display: inline-block;
     cursor: pointer;
     margin-top: 18px;
+    margin: 18px 0 0 0;
 }
 
 #accept-conditions {

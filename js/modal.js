@@ -16,7 +16,7 @@ const toggleModal = () => {
 // ---------------------- Área de Máscaras ----------------------//
 
 // Máscara de CPF
-    $('#cpf_input').mask('000.000.000-00', {reverse: true});
+    $('.cpf').mask('000.000.000-00', {reverse: true});
 
 // Máscara de celular
     $('#cellphone_input').mask('(00) 0 0000-0000');
