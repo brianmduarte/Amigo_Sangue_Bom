@@ -1412,9 +1412,9 @@ footer img {
     background-color: #d95150;
 }
 
-.password-progressbar[data-percentage= "45"],
-.password-progressbar[data-percentage= "78"]{
-    background-color: #f3e24a;
+.password-progressbar[data-percentage= "46"],
+.password-progressbar[data-percentage= "69"]{
+    background-color: #d1bf1e;
 }
 
 .password-progressbar[data-percentage= "92"]{
