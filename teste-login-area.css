@@ -15,6 +15,10 @@ header {
     border-radius: 5px 5px 0 0;
 }
 
+body{
+    background-color: #e2acad;
+}
+
 #modal {
     position: fixed;
     left: 50%;
@@ -41,7 +45,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .input-container,
@@ -49,11 +53,11 @@ header {
     margin-top: 10px;
     position: relative;
     display: flex
-
 }
 .button__wrapper {
-    margin-top: 80px;
-    margin-left: 50%;
+    margin-top: -180px;
+    margin-left: 15%;
+    display: block;
 }
 .icon_aws {
     align-items: center;
@@ -64,7 +68,7 @@ header {
     display: block;
     max-width: 90%;
     width: 430px;
-    margin: 5px 0;
+    margin: 10px 0;
     padding: 10px;
     font-size: 14px;
     border-radius: 7px;
@@ -85,7 +89,7 @@ header {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    margin-top: 10px
+    margin-top: 20px
 }
 
 #accept-conditions {
@@ -100,24 +104,6 @@ header {
 
 .input-checkbox:checked {
     background-color: #A63539;
-}
-
-.password-item .fas::before {
-    content: "\f057";
-}
-
-.password-item.checked .fas::before {
-    content: "\f058";
-}
-
-.submit-lente i {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    margin-top: 18px;
-    margin-right: 10px;
 }
 
 input[type="checkbox"]:checked::after {
@@ -173,4 +159,19 @@ input[type="checkbox"]:checked::after {
 .button__secundary:hover {
     background-color: #FBB6B6;
     transition: all .3s;
+}
+
+.forgot_password {
+    font-family: "Lora";
+    font-size: 14px;
+    display: block;
+    margin-top: 140px;
+    text-align: center;
+}
+
+.criar-cadastro {
+    font-family: "Lora";
+    font-size: 16px;
+    display: block;
+    text-align: center;
 }
