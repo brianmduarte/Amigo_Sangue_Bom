@@ -148,26 +148,37 @@
         <section3>
 
 
-            <div class="Cont">
-                <div class="text">
-                    <h2 id="title-05"> Deseja contribuir conosco, tirar dúvidas, ou deixar algum relato? <p>
-                        </p>Nos envie uma mensagem e teremos o prazer de respondê-lo.</h2>
-    
-                    <form class="form_cont" method="Post">
-                        <label>Nome</label>
-                        <input type="text" name="name" placeholder="Digite seu nome">
-                        <label>Email</label>
-                        <input type="email" name="email" placeholder="Digite seu email">
-                        <label>Telefone</label>
-                        <input type="telefone" name="telefone" placeholder="Digite seu telefone">
-                        <label>Mensagem</label>
-                        <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-                        <p>
-                            <button class="button_enviar">ENVIAR</button>
-    
-                    </form>
+            <form>
+                <div class="text_cont">
+                <h2 > Deseja contribuir conosco, tirar dúvidas, ou deixar algum relato? 
+                     Nos envie uma mensagem e teremos o prazer de respondê-lo.
+                </h2>
                 </div>
-            </div>
+               
+                <input name="name" autocomplete="off" required/>
+                 <label for="name"> 
+                    <span>Nome</span>
+                </label>
+                <p>
+                <input name="email" autocomplete="off" required/>
+                 <label for="email"> 
+                    <span>Email</span>
+                </label>
+                </p>
+                <input name="tell" autocomplete="off" required/>
+                 <label  for="tell"> 
+                    <span>Telefone</span>
+                </label>
+                <p>
+                    <textarea class="form_cont" placeholder="Digite sua mensagem"></textarea> 
+                      
+                <p>
+                    <button class="button_enviar">Enviar</button>    
+                
+               
+    
+             </form>
+
         </section3>
 
         <footer>
