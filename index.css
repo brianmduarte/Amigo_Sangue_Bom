@@ -1036,7 +1036,7 @@ aside .pointer {
 
 /* ESTILIZAÇÕES DA SECTION 3 POR RANAN */
 
-section3 {
+#section_3 {
     display: flex;
     justify-content: center;
     height: 871px;
@@ -1044,91 +1044,74 @@ section3 {
     background-color: #767676;
 }
 
-Cont{
-    width: 100%;
-    height: 980px;
-    flex-shrink: 0;
-    background: #767676;
-    position: relative;
-}
-h2 {
-    color: #f3f3f3;
+ .texto_cont{
+    font-size: 30px;
+    color:#f3f3f3;
+    font-family: roboto;
     text-align: center;
+    
 } 
 
-form {
-    overflow-block:hidden ;
-    position: absolute;
-    justify-items: center;
-    font-size: 25px;
-    color: #000;
-    width: 1103px;
-    height: 50px;
-    margin-top: 40px;
-}
-
-input {
-    color: black;
+#camp_cont {
+ 
     font-size: 20px;
-    width: 100%;
+    width: 800px;
+    margin-right: 0px;
     padding: 20px 5px 5px;
     background-color:#fff;
     border: none;
     border-radius: 4px; 
     margin-top: 20px;
 }
+#camp_label {
+    font-size: 20px;
+    width: 800px;
+    margin-left: 200px;
+    padding: 20px 5px 5px;
+    border: none;
+    border-radius: 4px; 
+    
+   
+     
+}
 
-label {
+#label_cont {
     color: #000;
     position: relative;
-    width: 200px;
     height: 30px; 
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
-    font-weight: 10px;
-    line-height: 130%; /* 22px */
+    line-height: 150%; /* 22px */
     letter-spacing: 1.2px;
     flex-shrink: 0;
     pointer-events: none;
-    border-bottom: 1px solid #ffffff;
+    
 }
 
-span {
+#span {
     position: absolute;
-    width: 20px;
+    width: 30px;
     bottom: 5px;
     left: 5px;
-    font-size: 25px;
+    font-size: 30px;
     transition: all 0.3s ease;
+    
     
 }
 
-label::after {
-    content: "";
-    position: relative;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 100%;
-    border-bottom: 3px solid #e0138c;
-    transform: translateX(-100%);
-    transition: all 0.3s ease;
+  
+#camp_cont:focus + label span,
+#camp_cont:valid + label span {
+    transform: translateY(-150%); 
+    bottom: 13px;
+    margin-top: 20px;
+    color:#A63539;
+
+   
 }
   
-input:focus + label span,
-input:valid + label span {
-    transform: translateY(-150%);
-    font-size: 25px;
-    bottom: 10px;
-    color: #A63539;
-    
-}
-  
-input:focus + label::after,
-input:valid + label::after {
-    transform: translateX(0%);
-}
+
 
 .form_cont{
     height: 150px;
