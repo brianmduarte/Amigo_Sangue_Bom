@@ -3819,3 +3819,82 @@ input[type="checkbox"]:checked::after {
 }
 
 
+#containerSlider{
+
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.alinhamentoDiv{
+    position: relative;
+    display: flex;
+    width: 25%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.persona{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: #e4e4e4;
+    color: black;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    margin: 10px;
+    gap: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.on{
+    opacity: 1;
+}
+
+.persona>img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px black;
+}
+
+
+button{
+    box-sizing: 50px;
+    border: none;
+    background-color: white;
+}
+
+button>img{
+    height: 120px;
+}
+
+button>img:hover{
+    height: 140px;
+    box-shadow: 1px 1px 30px rgba(255, 0, 0, 0.5);;
+    background-color: white;
+    border-radius: 50vh;
+}
+
+#quemSomos{
+    font-size: 400%;
+    position: absolute;
+    display: flex;
+    color: #BE8F90;
+    top: 50%;
+}
+
+.persona>h2{
+    color: #000;
+    text-shadow: 1px 1px 2px black;
+}
