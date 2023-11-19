@@ -1036,6 +1036,7 @@ aside .pointer {
 
 /* ESTILIZAÇÕES DA SECTION 3 POR RANAN */
 
+/*
 section3 {
     display: flex;
     justify-content: center;
@@ -1087,7 +1088,7 @@ label {
     font-size: 20px;
     font-style: normal;
     font-weight: 10px;
-    line-height: 130%; /* 22px */
+    line-height: 130%;
     letter-spacing: 1.2px;
     flex-shrink: 0;
     pointer-events: none;
@@ -1142,7 +1143,7 @@ input:valid + label::after {
     font-size: 25px;
     font-style: normal;
     font-weight: 10px;
-    line-height: 110%; /* 22px */
+    line-height: 110%;
     letter-spacing: 1.2px;
     flex-shrink: 0;
     margin-top: 25px;
@@ -1168,7 +1169,7 @@ input:valid + label::after {
     transition: all .3s;
 
 }
-
+*/
 /* ESTILIZAÇÕES DA SECTION 3 POR RANAN */
 
 /* ESTILIZAÇÃO FOOTER POR MATEUS - INÍCIO */
