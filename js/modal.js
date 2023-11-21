@@ -1,3 +1,5 @@
+
+
 // ---------------------- Área do Modal ----------------------//
 const openModalButton = document.querySelector("#login_signup");
 const closeModalButton = document.querySelector("#cancel_signup");
@@ -174,245 +176,79 @@ const toggleModal = () => {
 }) ()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Função para validar CPF
-function validarCPF(cpf) {
-
-    // Remove caracteres não numéricos
-    cpf = cpf.replace(/\D/g, '');
-
-    // Verifica se o CPF possui 11 dígitos
-    if (cpf.length !== 11) {
-        document.getElementById("wrong_cpf").style.display = 'block';
-        return false;
-    }
-
-    // Verifica se todos os dígitos são iguais (exemplo: 111.111.111-11)
-    if (/^(\d)\1{10}$/.test(cpf)) {
-        document.getElementById("wrong_cpf").style.display = 'block';
-        return false;
-    }
-
-    // Cálculo do primeiro dígito verificador
-    var soma = 0;
-    for (var i = 0; i < 9; i++) {
-        soma += parseInt(cpf.charAt(i)) * (10 - i);
-    }
-    var resto = soma % 11;
-    var digitoVerificador1 = (resto < 2) ? 0 : 11 - resto;
-
-    // Verifica o primeiro dígito verificador
-    if (parseInt(cpf.charAt(9)) !== digitoVerificador1) {
-        document.getElementById("wrong_cpf").style.display = 'block';
-        return false;
-    }
-
-    // Cálculo do segundo dígito verificador
-    soma = 0;
-    for (var i = 0; i < 10; i++) {
-        soma += parseInt(cpf.charAt(i)) * (11 - i);
-    }
-    resto = soma % 11;
-    var digitoVerificador2 = (resto < 2) ? 0 : 11 - resto;
-
-    // Verifica o segundo dígito verificador
-    if (parseInt(cpf.charAt(10)) !== digitoVerificador2) {
-        document.getElementById("wrong_cpf").style.display = 'block';
-        return false;
-    }
-
-    return true;
-}
-
-// Função para validar Email
-function validarEmail(email) {
-
-    //Regex usado para verificar os caracteres antes do @ e depois e checa também após o .
-    var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
-    //Se o regex for testado (.test) e não estiver certo o email, ele vai quebrar e mostrar que está errado.
-    if (!regex.test(email)) {
-        document.getElementById('wrong_email').style.display = 'block';
-        return false;
-    }
-
-    return true;
-}
-
-// Função para validar data de nascimento
-function validarDataNascimento(data) {
-
-    //Regex para verificar se os digitos são números e se são válidos.
-    //Se o regex for testado (.test) e não estiver certo a data de nascimento, ele vai quebrar e mostrar que está errado.
-    var regex = /^\d{4}-\d{2}-\d{2}$/;
-    if (!regex.test(data)) {
-        document.getElementById("wrong_borndate").style.display = 'block';
-        return false;
-    }
-
-    var partesData = data.split('-');
-    var ano = parseInt(partesData[0]);
-    var mes = parseInt(partesData[1]);
-    var dia = parseInt(partesData[2]);
-
-    if (isNaN(ano) || isNaN(mes) || isNaN(dia)) {
-        document.getElementById("wrong_borndate").style.display = 'block';
-        return false;
-    }
-
-    if (ano < 1900 || ano > new Date().getFullYear() || mes < 1 || mes > 12 || dia < 1 || dia > 31) {
-        document.getElementById("wrong_borndate").style.display = 'block';
-        return false;
-    }
-
-
-    return true;
-}
-
-// Função para validar telefone 
-function validarTelefone(telefone) {
-
-    // Remove caracteres não numéricos
-    telefone = telefone.replace(/\D/g, '');
-
-    // Verifique o comprimento do número de telefone
-    if (telefone.length < 10 || telefone.length > 11) {
-        document.getElementById("wrong_cellphone").style.display = 'block';
-        return false;
-    }
-
-    // Verifique se o telefone começa com o dígito 9 (para números de celular)
-    if (telefone.length === 11 && telefone.charAt(2) !== '9') {
-        document.getElementById("wrong_cellphone").style.display = 'block';
-        return false;
-    }
-
-    // Outras regras de validação podem ser adicionadas, como verificar o código de área, etc.
-    return true;
-}
-
-// Função para validar senha 
-function validarSenha(password, repeatPassword) {
-
-    //regex abaixo para checar:
-    /*
-        Se a senha possui mínimo 8 dígitos.
-        Se a senha possui letras maiúsculas e minúsculas.
-        Se a senha possui caracteres especiais: e.g !@#$%;
-        Se a senha possui números.
-    */
-
-
-    var regex = /^(?=.*? [A - Z])(?=.*? [a - z])(?=.*? [0 - 9])(?=.*? [# ? !@$ %^&* -]).{ 8, }$/;
-    if (!regex.test(password)) {
-        alert('A senha não atende aos critérios.\n\n\nA senha precisa ter no mínimo 8 dígitos.\nPrecisa conter algum caracter especial: !@#$%\nPrecisa conter pelo menos uma letra maiúscula e minúscula.\nPrecisa conter números.')
-        document.getElementById('wrong_password').style.display = 'block';
-        return false;
-    }
-
-    if (password !== repeatPassword) {
-        alert('Senhas precisam ser iguais!')
-        return false;
-    }
-
-    return true;
-}
-
 function validarCadastro() {
-
-    var name = document.getElementById("name_input").value;
-    var email = document.getElementById("email_input").value;
-    var cellphone = document.getElementById("cellphone_input").value;
-    var born = document.getElementById("born_input").value;
-    var cpf = document.getElementById("cpf_input").value;
-    var password = document.getElementById("password_input").value;
-    var repeatPassword = document.getElementById("repeat_password_input").value;
-    var informacoes_reais = document.getElementById("informacoes_reais").checked;
-    var termos_de_uso = document.getElementById("termos_de_uso").checked;
-
-    // Objeto para armazenar as mensagens de erro
-    var errors = {};
-
-    // Limpar mensagens de erro antes de revalidar
-    document.getElementById("wrong_email").style.display = "none";
-    document.getElementById("wrong_cellphone").style.display = "none";
-    document.getElementById("wrong_borndate").style.display = "none";
-    document.getElementById("wrong_cpf").style.display = "none";
-    document.getElementById("wrong_password").style.display = "none";
-
-    // Realize as validações se estão todos os campos preenchidos.
-    if (name === "" || email === "" || cellphone === "" || born === "" || cpf === "" || password === "" || repeatPassword === "" || !lerolero) {
-        alert("Por favor, preencha todos os campos e aceite as declarações.");
-        return false;
-    }
-    // Realize as validações de cada um para estar no seu devido lugar.
-    if (name === "") {
-        errors.name = "Por favor, preencha o nome.";
+    // Resetando mensagens de erro
+    for (const fieldKey in fields) {
+        const field = fields[fieldKey]
+        hideMessageError(field)
     }
 
-    if (email === "" || !validarEmail(email)) {
-        errors.email = "Email inválido ou vazio.";
+    // Validando campos obrigatórios
+    if (validateRequiredFields()) return;
+
+    // Validando o nome completo
+    const nomeElement = fields['nome'].element;
+    if (nomeElement.value.length < 3) {
+        showMessageError(fields['nome'], 'O nome completo deve conter no mínimo 3 caracteres!');
+        return;
     }
 
-    if (cellphone === "" || !validarTelefone(cellphone)) {
-        errors.cellphone = "Por favor, preencha o telefone.";
+    // Validando o email
+    const emailElement = fields['email'].element;
+    const emailPattern = new RegExp(/\S+@\S+\.\S+/);
+    if (!emailPattern.test(emailElement.value)) {
+        showMessageError(fields['email'], 'O email deve estar na estrutura padrão "exemplo@exemplo.com.br"');
+        return;
     }
 
-    if (born === "" || !validarDataNascimento(born)) {
-        errors.born = "Data de nascimento inválida ou vazia.";
+    // Validando o telefone
+    const telefoneElement = fields['telefone'].element;
+    const telefonePattern = new RegExp(/^\(\d{2}\) \d \d{4}-\d{4}$/);
+    if (!telefonePattern.test(telefoneElement.value)) {
+        showMessageError(fields['telefone'], 'O telefone deve estar no formato brasileiro (00) 0 0000-0000');
+        return;
     }
 
-    if (cpf === "" || !validarCPF(cpf)) {
-        errors.cpf = "CPF inválido ou vazio.";
+    // Validando a data de nascimento
+    const dataElement = fields['data'].element;
+    const dataPattern = new RegExp(/^\d{2}\/\d{2}\/\d{4}$/);
+    if (!dataPattern.test(dataElement.value)) {
+        showMessageError(fields['data'], 'A data de nascimento deve estar no formato dd/mm/aaaa');
+        return;
     }
 
-    if (password === "" || repeatPassword === "" || !validarSenha(password, repeatPassword)) {
-
-        errors.password = "Senhas não coincidem ou estão vazias.";
+    // Validando o CPF
+    const cpfElement = fields['cpf'].element;
+    const cpfPattern = new RegExp(/^\d{3}\.\d{3}\.\d{3}-\d{2}$/);
+    if (!cpfPattern.test(cpfElement.value)) {
+        showMessageError(fields['cpf'], 'O CPF deve estar no formato 000.000.000-00');
+        return;
     }
 
-    if (!informacoes_reais && !termos_de_uso || !termos_de_uso || !informacoes_reais) {
-        alert('Aceite os Termos de Uso e confirme que as informações acima são reais.')
-        errors.lerolero = "Você deve aceitar as declarações.";
+    // Validando a senha
+    const senhaElement = fields['password'].element;
+    const senhaStrength = parseInt(progressBar.dataset.percentage);
+    if (senhaStrength < 100) {
+        showMessageError(fields['password'], 'A senha não atende aos requisitos mínimos de segurança');
+        return;
     }
 
-    // Se houver erros no errors = {}, vai retornar e não vai validar o formulário.
-    if (Object.keys(errors).length > 0) {
-        return false;
-    }
-
-    // Se todas as validações passarem, o formulário será enviado
-    return alert('Usuário cadastrado com sucesso!');
+    // Todas as validações passaram
+    alert('Cadastro efetuado com sucesso! Acesse a área de login');
 }
 
 
 
 
 
-       
+
+
+
+
+
+
+
+
+
+
+
