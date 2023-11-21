@@ -1628,6 +1628,10 @@ input[type="checkbox"]:checked::after {
         padding-top: 45px;
     }
 
+    #modal-title {
+        margin: 5px;
+    }
+
     #modal {
         position: fixed;
         left: 50%;
@@ -1638,13 +1642,51 @@ input[type="checkbox"]:checked::after {
         box-shadow: 1px 1px 10px #00000096;
         width: 350px;
         max-width: 90%;
-        padding: 20px;
-        margin-top: 25px;
+        padding: 10px;
         z-index: 10;
+    }
+
+    .input-container {
+        margin-top: -6px;
+        margin-bottom: -7px;
+    }
+
+    .input-field {
+        max-width: 90%;
+        width: 425px;
+        margin: 7px 0;
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 7px;
+        border: 1px solid #ccc;
+        outline: none;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-family: 'Lora';
+        margin-left: 5%;
+    }
+
+    .password-description,
+    .password-item {
+        font-size: 11px;
+        margin-bottom: -25px;
+    }
+
+    .password-style {
+        margin-bottom: -6px;
+        margin-top: 6px;
+    }
+
+    #accept-conditions {
+        font-size: 11px;
     }
 
     .background-default {
         background-color: #ffffff;
+    }
+
+    .button__wrapper {
+        margin-top: 14px;
     }
 
     .login-form {
@@ -2149,11 +2191,12 @@ input[type="checkbox"]:checked::after {
 
 
     footer {
-        height: 70vh;
+        height: 94vh;
     }
 
     #rodape {
         flex-direction: column;
+        margin-top: 150px;
     }
 
     .secoes-rodape {
