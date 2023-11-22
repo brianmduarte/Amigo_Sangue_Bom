@@ -222,7 +222,7 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 80px;
-    height: 60vh;
+    height: 55vh;
 }
 
 .container {
@@ -430,6 +430,12 @@ section.containerProjeto {
 .how_donate {
     background-color: #BE8F90;
     height: 220vh;
+    padding-top: 50px;
+}
+
+.how_donate__ {
+    background-color: #BE8F90;
+    height: 73vh;
     padding-top: 50px;
 }
 
@@ -921,7 +927,7 @@ section.containerProjeto {
 }
 
 aside {
-    height: 170vh;
+    height: 140vh;
     background-color: #f3f3f3;
     flex: 1;
     padding: 20px;
@@ -1039,9 +1045,14 @@ aside .pointer {
 #section_3 {
     display: flex;
     justify-content: center;
-    height: 745px;
+    height: 790px;
     width: auto;
     background-color: #767676;
+}
+
+#responsive_form {
+    justify-content: center;
+    align-items: center;
 }
 
  .texto_cont{
@@ -1055,7 +1066,7 @@ aside .pointer {
 
 #camp_cont {
     font-size: 15px;
-    width: 800px;
+    width: 100%;
     margin-right: 0px;
     padding: 20px 5px 5px;
     background-color:#fff;
@@ -1065,7 +1076,7 @@ aside .pointer {
 }
 #camp_label {
     font-size: 15px;
-    width: 800px;
+    width: 100%;
     padding: 20px 5px 5px;
     border: none;
     border-radius: 4px; 
@@ -1167,7 +1178,6 @@ body.fixed-footer footer {
 body.relative-footer footer {
     background-color: #A63539;
     color: #fff;
-    padding: 10px;
     position: relative;
     bottom: 0;
     width:100%;
@@ -2009,7 +2019,13 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 79vh;
+        height: 130vh;
+    }
+
+    .how_donate__ {
+        background-color: #BE8F90;
+        height: 75vh;
+        padding-top: 50px;
     }
 
     .dot_area_agendamento {
@@ -2046,6 +2062,10 @@ input[type="checkbox"]:checked::after {
         margin-bottom: 63px;
         margin-left: 1px;
         letter-spacing: 0;
+    }
+
+    aside {
+        height: 165vh;
     }
 
     .schedular_area {
@@ -2088,7 +2108,7 @@ input[type="checkbox"]:checked::after {
     }
 
     aside {
-        height: 250vh;
+        height: 165vh;
     }
 
     .camp_area {
@@ -2543,7 +2563,13 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 88vh;
+        height: 130vh;
+    }
+
+    .how_donate__ {
+        background-color: #BE8F90;
+        height: 85vh;
+        padding-top: 50px;
     }
 
     .dot_area_agendamento {
@@ -2612,7 +2638,7 @@ input[type="checkbox"]:checked::after {
     }
 
     aside {
-        height: 290vh;
+        height: 220vh;
     }
 
     .camp_area {
@@ -3017,7 +3043,13 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 95vh;
+        height: 140vh;
+    }
+
+    .how_donate__ {
+        background-color: #BE8F90;
+        height: 94vh;
+        padding-top: 50px;
     }
 
     .title_how_donate h1 {
@@ -3075,7 +3107,7 @@ input[type="checkbox"]:checked::after {
     }
 
     aside {
-        height: 305vh;
+        height: 270vh;
     }
 
     .camp_area {
@@ -3422,7 +3454,7 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 70vh;
+        height: 160vh;
     }
 
     .title_how_donate h1 {
@@ -3558,6 +3590,7 @@ input[type="checkbox"]:checked::after {
 
     #login_signup {
         width: 140px;
+        min-width: 115px;
         height: 35px;
         padding: 5px;
         background: #A63539;
@@ -3578,7 +3611,7 @@ input[type="checkbox"]:checked::after {
     .projeto_title h1 {
         color: rgb(190, 143, 144);
         font-family: Ovo, serif;
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 400;
         margin-left: 30px;
     }
@@ -3714,8 +3747,9 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 70vh;
+        height: 160vh;
     }
+
 
     .camp_area {
         display: grid;
@@ -3890,9 +3924,10 @@ input[type="checkbox"]:checked::after {
 
 #containerSlider{
     display: flex;
-    height: 65vh;
+    height: 50vh;
     align-items: center;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .alinhamentoDiv{
@@ -3955,12 +3990,12 @@ button>img:hover{
 
 #quemSomos{
     font-size: 50px;
-    position: absolute;
     display: flex;
     color: #BE8F90;
-    top: 50%;
     font-family: 'Ovo', serif;
     font-weight: 400;
+    justify-content: right;
+    margin-right: 8%;
 }
 
 .persona>h2{
