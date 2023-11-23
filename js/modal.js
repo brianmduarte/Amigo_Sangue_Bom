@@ -6,6 +6,8 @@ const closeModalButton = document.querySelector("#cancel_signup");
 const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
 
+
+
 const toggleModal = () => {
     modal.classList.toggle("hide");
     fade.classList.toggle("hide");
@@ -14,6 +16,24 @@ const toggleModal = () => {
 [openModalButton, closeModalButton, fade].forEach((el) => {
     el.addEventListener("click", () => toggleModal());
 });
+
+
+// ---------------------- Área do Modal de Validação ----------------------//
+
+const openValidation = document.querySelector("#validation_button");
+const modalValidation = document.querySelector("#modal__");
+const fadeValidation = document.querySelector("#fade__");
+
+const toggleModalValidation = () => {
+    modalValidation.classList.toggle("hide__");
+    fadeValidation.classList.toggle("hide__");
+};
+
+[openValidation, fadeValidation].forEach((el) => {
+    el.addEventListener("click", () => toggleModalValidation());
+});
+
+
 
 // ---------------------- Área de Máscaras ----------------------//
 

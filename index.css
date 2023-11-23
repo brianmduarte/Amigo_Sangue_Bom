@@ -290,10 +290,6 @@ iframe {
 }
 
 
-#background_aside {
-    background-color: #efefef;
-}
-
 .container_estoque {
     display: flex;
     flex-direction: column;
@@ -301,7 +297,6 @@ iframe {
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: #efefef;
 }
 
 .area_bloods {
@@ -346,7 +341,6 @@ iframe {
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: #efefef;
 }
 
 .title_estoque {
@@ -1215,7 +1209,7 @@ footer ul {
     padding-top: 20px;
     padding-bottom: 20px;
     letter-spacing: 1.8px;
-    font-size: 1.125rem;
+    font-size: 0.8rem;
     text-align: left;
     cursor: pointer;
     font-family: "Inter", sans-serif;
@@ -1231,7 +1225,7 @@ footer ul {
     color: #fff;
     padding-top: 15px;
     letter-spacing: 1.8px;
-    font-size: 1.125rem;
+    font-size: 0.8rem;
     text-align: left;
     cursor: pointer;
     font-family: "Inter", sans-serif;
@@ -1382,6 +1376,12 @@ footer img {
     pointer-events: all;
 }
 
+#fade__, #modal__{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
 #fade {
     position: fixed;
     top: 0;
@@ -1391,6 +1391,17 @@ footer img {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 5;
 }
+
+#fade__ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
 
 #modal {
     position: fixed;
@@ -1406,13 +1417,38 @@ footer img {
     z-index: 10;
 }
 
+#modal__ {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px #00000096;
+    width: 450px;
+    max-width: 90%;
+    padding: 20px;
+    z-index: 10;
+
+}
+
 #modal.hide,
 #fade.hide {
     opacity: 0;
     pointer-events: none;
 }
 
+#modal__.hide__,
+#fade__.hide__ {
+    opacity: 0;
+    pointer-events: none;
+}
+
 #modal.hide {
+    top: 0;
+}
+
+#modal__.hide__ {
     top: 0;
 }
 
@@ -1434,6 +1470,16 @@ footer img {
     margin-bottom: -5px;
     position: relative;
     display: block;
+}
+
+
+
+.input-container__ {
+    margin-top: 30px;
+    margin-bottom: -5px;
+    position: relative;
+    display: block;
+    margin-left: 25px;
 }
 
 .button__wrapper {
