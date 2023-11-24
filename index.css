@@ -1355,6 +1355,26 @@ footer img {
     margin-right: 5%;
 }
 
+.button__validation {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    background: #A63539;
+    color: #fff;
+    border-radius: 7px;
+    border: 1px solid #FBB6B6;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-style: 600;
+    font-size: 1.0rem;
+    margin-right: 5%;
+}
+
+.button__validation:hover {
+    background: #a63539c5;
+    transition: all .3s;
+}
+
 .button__secundary {
     background-color: #fff;
     color: #000;
@@ -1472,6 +1492,13 @@ footer img {
     display: block;
 }
 
+.button__wrapper__ {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    position: relative;
+    display: block;
+    text-align: center;
+}
 
 
 .input-container__ {
@@ -1480,6 +1507,34 @@ footer img {
     position: relative;
     display: block;
     margin-left: 25px;
+}
+
+.input-container__ input {
+    display: none;   
+}
+
+.input-container__ label {
+    margin-right: 10px;
+}
+
+.input-container__ input + label:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #A63539;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+} 
+
+.input-container__ input:checked + label:before {
+    background-color: #fff;
+    border: 5px solid #A63539;
+    box-sizing: border-box;
+    padding: 4px;
 }
 
 .button__wrapper {

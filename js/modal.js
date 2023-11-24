@@ -196,66 +196,6 @@ const toggleModalValidation = () => {
 }) ()
 
 
-function validarCadastro() {
-    // Resetando mensagens de erro
-    for (const fieldKey in fields) {
-        const field = fields[fieldKey]
-        hideMessageError(field)
-    }
-
-    // Validando campos obrigatórios
-    if (validateRequiredFields()) return;
-
-    // Validando o nome completo
-    const nomeElement = fields['nome'].element;
-    if (nomeElement.value.length < 3) {
-        showMessageError(fields['nome'], 'O nome completo deve conter no mínimo 3 caracteres!');
-        return;
-    }
-
-    // Validando o email
-    const emailElement = fields['email'].element;
-    const emailPattern = new RegExp(/\S+@\S+\.\S+/);
-    if (!emailPattern.test(emailElement.value)) {
-        showMessageError(fields['email'], 'O email deve estar na estrutura padrão "exemplo@exemplo.com.br"');
-        return;
-    }
-
-    // Validando o telefone
-    const telefoneElement = fields['telefone'].element;
-    const telefonePattern = new RegExp(/^\(\d{2}\) \d \d{4}-\d{4}$/);
-    if (!telefonePattern.test(telefoneElement.value)) {
-        showMessageError(fields['telefone'], 'O telefone deve estar no formato brasileiro (00) 0 0000-0000');
-        return;
-    }
-
-    // Validando a data de nascimento
-    const dataElement = fields['data'].element;
-    const dataPattern = new RegExp(/^\d{2}\/\d{2}\/\d{4}$/);
-    if (!dataPattern.test(dataElement.value)) {
-        showMessageError(fields['data'], 'A data de nascimento deve estar no formato dd/mm/aaaa');
-        return;
-    }
-
-    // Validando o CPF
-    const cpfElement = fields['cpf'].element;
-    const cpfPattern = new RegExp(/^\d{3}\.\d{3}\.\d{3}-\d{2}$/);
-    if (!cpfPattern.test(cpfElement.value)) {
-        showMessageError(fields['cpf'], 'O CPF deve estar no formato 000.000.000-00');
-        return;
-    }
-
-    // Validando a senha
-    const senhaElement = fields['password'].element;
-    const senhaStrength = parseInt(progressBar.dataset.percentage);
-    if (senhaStrength < 100) {
-        showMessageError(fields['password'], 'A senha não atende aos requisitos mínimos de segurança');
-        return;
-    }
-
-    // Todas as validações passaram
-    alert('Cadastro efetuado com sucesso! Acesse a área de login');
-}
 
 
 

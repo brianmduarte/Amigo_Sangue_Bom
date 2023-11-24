@@ -19,6 +19,7 @@
     <!-- <script defer type="text/javascript" src="/js/modal.js"></script> -->
     <script defer type="text/javascript" src="/js/modal.js"></script>
     <script defer type="text/javascript" src="/js/index.js"></script>
+    <script defer type="text/javascript" src="/js/validation.js"></script>
 
     <title>Amigo Sangue Bom | Como Doar </title>
 
@@ -247,109 +248,116 @@
 
             </div>
 
-            <div class="input-container">
-                <input placeholder="Informe a sua idade" class="input-field" type="number">
-                <span class="input-highlight"></span>
+            <div class="modal-validation-container">
+                <div class="input-container">
+                    <input placeholder="Informe a sua idade" class="input-field" type="number" name="idade">
+                    <span class="input-highlight"></span>
+                </div>
+                <span class="message-error">Campo obrigatório</span>
+
+                <div class="input-container">
+                    <input placeholder="Peso (kg)" class="input-field" type="number" name="peso">
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="input-container__">
+                    <span>Apresenta sintomas gripais?</span><br>
+                    <input type="radio" id="question1" name="requisitos" value="0" class="requisito-input"> 
+                    <label for="question1">Sim</label>
+
+                    <input type="radio" id="answer1" name="requisitos" value="1" class="requisito-input">
+                    <label for="answer1">Não</label><br>
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="input-container__">
+                    <span>Está em período de amamentação?</span><br>
+                    <input type="radio" id="question2" name="requisitos1" value="0" class="requisito-input">
+                    <label for="question2">Sim</label>
+
+                    <input type="radio" id="answer2" name="requisitos1" value="1" class="requisito-input">
+                    <label for="answer2">Não</label><br>
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="input-container__">
+                    <span>Realizou tatuagem, maquiagem definitiva ou micropigmentação nos últimos 12 meses?</span><br>
+                    <input type="radio" id="question3" name="requisitos2" value="0" class="requisito-input">
+                    <label for="question3">Sim</label>
+
+                    <input type="radio" id="answer3" name="requisitos2" value="1" class="requisito-input">
+                    <label for="answer3">Não</label><br>
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="input-container__">
+                    <span>Teve hepatite após os 11 anos de idade? </span><br>
+                    <input type="radio" id="question4" name="requisitos3" value="0" class="requisito-input">
+                    <label for="question4">Sim</label>
+
+                    <input type="radio" id="answer5" name="requisitos3" value="1" class="requisito-input">
+                    <label for="answer5">Não</label><br>
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="input-container__">
+                    <span>Possui hepatites B e C, AIDS (vírus HIV), HTLV I e II e Doença de chagas?</span><br>
+                    <input type="radio" id="question6" name="requisitos4" value="0" class="requisito-input">
+                    <label for="question6">Sim</label>
+
+                    <input type="radio" id="answer6" name="requisitos4" value="1" class="requisito-input">
+                    <label for="answer6">Não</label><br>
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="input-container__">
+                    <span>Possui doença de Parkinson?</span><br>
+                    <input type="radio" id="question7" name="requisitos5" value="0" class="requisito-input">
+                    <label for="question7">Sim</label>
+
+                    <input type="radio" id="answer7" name="requisitos5" value="1" class="requisito-input">
+                    <label for="answer7">Não</label><br>
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="input-container__">
+                    <span>Realizou algum procedimento endoscópico?</span><br>
+                    <input type="radio" id="question8" name="requisitos6" value="0" class="requisito-input">
+                    <label for="question8">Sim</label>
+
+                    <input type="radio" id="answer8" name="requisitos6" value="1" class="requisito-input">
+                    <label for="answer8">Não</label><br>
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="input-container__">
+                    <span>Tomou alguma vacina para gripe nas últimas 48 horas?</span><br>
+                    <input type="radio" id="question9" name="requisitos7" value="0" class="requisito-input">
+                    <label for="question9">Sim</label>
+
+                    <input type="radio" id="answer9" name="requisitos7" value="1" class="requisito-input">
+                    <label for="answer9">Não</label><br>
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="input-container__">
+                    <span>Viajou para o exterior nos últimos 30 dias?</span><br>
+                    <input type="radio" id="question10" name="requisitos8" value="0" class="requisito-input">
+                    <label for="question10">Sim</label>
+
+                    <input type="radio" id="answer10" name="requisitos8" value="1" class="requisito-input">
+                    <label for="answer10">Não</label><br>
+                    <span class="input-highlight"></span>
+                </div>
+
+                <div class="button__wrapper__">
+                    <button class="button__validation" type="submit" onclick="validarRequisitos()">Validar</button>
+                </div>
+
             </div>
-            <span class="message-error">Campo obrigatório</span>
-
-            <div class="input-container">
-                <input placeholder="Peso (kg)" class="input-field" type="number">
-                <span class="input-highlight"></span>
-            </div>
-
-            <div class="input-container__">
-                <span>Apresenta sintomas gripais?</span><br>
-                <input type="radio" id="question1" name="requisitos">
-                <label for="question1">Sim</label>
-
-                <input type="radio" id="answer1" name="requisitos">
-                <label for="answer1">Não</label><br>
-                <span class="input-highlight"></span>
-            </div>
-
-            <div class="input-container__">
-                <span>Está em período de amamentação?</span><br>
-                <input type="radio" id="question2" name="requisitos">
-                <label for="question2">Sim</label>
-
-                <input type="radio" id="answer2" name="requisitos">
-                <label for="answer2">Não</label><br>
-                <span class="input-highlight"></span>
-            </div>
-
-            <div class="input-container__">
-                <span>Realizou tatuagem, maquiagem definitiva ou micropigmentação nos últimos 12 meses?</span><br>
-                <input type="radio" id="question3" name="requisitos">
-                <label for="question3">Sim</label>
-
-                <input type="radio" id="answer3" name="requisitos">
-                <label for="answer3">Não</label><br>
-                <span class="input-highlight"></span>
-            </div>
-
-            <div class="input-container__">
-                <span>Teve hepatite após os 11 anos de idade? </span><br>
-                <input type="radio" id="question4" name="requisitos">
-                <label for="question4">Sim</label>
-
-                <input type="radio" id="answer5" name="requisitos">
-                <label for="answer5">Não</label><br>
-                <span class="input-highlight"></span>
-            </div>
-
-            <div class="input-container__">
-                <span>Possui hepatites B e C, AIDS (vírus HIV), HTLV I e II e Doença de chagas?</span><br>
-                <input type="radio" id="question6" name="requisitos">
-                <label for="question6">Sim</label>
-
-                <input type="radio" id="answer6" name="requisitos">
-                <label for="answer6">Não</label><br>
-                <span class="input-highlight"></span>
-            </div>
-
-            <div class="input-container__">
-                <span>Possui doença de Parkinson?</span><br>
-                <input type="radio" id="question7" name="requisitos">
-                <label for="question7">Sim</label>
-
-                <input type="radio" id="answer7" name="requisitos">
-                <label for="answer7">Não</label><br>
-                <span class="input-highlight"></span>
-            </div>
-
-            <div class="input-container__">
-                <span>Realizou algum procedimento endoscópico?</span><br>
-                <input type="radio" id="question8" name="requisitos">
-                <label for="question8">Sim</label>
-
-                <input type="radio" id="answer8" name="requisitos">
-                <label for="answer8">Não</label><br>
-                <span class="input-highlight"></span>
-            </div>
-
-            <div class="input-container__">
-                <span>Tomou alguma vacina para gripe nas últimas 48 horas?</span><br>
-                <input type="radio" id="question9" name="requisitos">
-                <label for="question9">Sim</label>
-
-                <input type="radio" id="answer9" name="requisitos">
-                <label for="answer9">Não</label><br>
-                <span class="input-highlight"></span>
-            </div>
-
-            <div class="input-container__">
-                <span>Viajou para o exterior nos últimos 30 dias?</span><br>
-                <input type="radio" id="question10" name="requisitos">
-                <label for="question10">Sim</label>
-
-                <input type="radio" id="answer10" name="requisitos">
-                <label for="answer10">Não</label><br>
-                <span class="input-highlight"></span>
-            </div>
-
            
 
+            
 
         </div>
     </div>
