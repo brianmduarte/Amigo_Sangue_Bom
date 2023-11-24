@@ -102,7 +102,7 @@ $('#born_input').mask('00/00/0000');
     const onFormSubmit = (event) => {
         event.preventDefault()
         if (validateRequiredFields()) return
-        alert('Cadastro realizado com sucesso!')
+        
     }
 
 

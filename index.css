@@ -1446,7 +1446,7 @@ footer img {
     border-radius: 7px;
     box-shadow: 1px 1px 10px #00000096;
     width: 450px;
-    max-width: 90%;
+    max-width: 75%;
     padding: 20px;
     z-index: 10;
 
@@ -1734,6 +1734,17 @@ input[type="checkbox"]:checked::after {
 
 /* MEDIA MOBILE */
 @media (max-width: 480px) {
+
+    .input-container__ {
+        margin-top: 23px;
+        margin-bottom: -10px;
+        position: relative;
+        display: block;
+        margin-left: 25px;
+        font-size: 13px;
+    }
+
+    
     main {
         height: 100vh;
         padding-top: 45px;
@@ -2120,7 +2131,7 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 130vh;
+        height: 148vh;
     }
 
     .how_donate__ {
@@ -2369,10 +2380,16 @@ input[type="checkbox"]:checked::after {
 
 }
 
+body.relative-footer footer {
+    height: 21vh;
+}
+
 
 
 /* TELAS EXTRA PEQUENAS */
 @media (min-width: 481px) and (max-width: 767px) {
+       
+    
     main {
         height: 100vh;
         padding-top: 15px;
@@ -2664,7 +2681,7 @@ input[type="checkbox"]:checked::after {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 130vh;
+        height: 145vh;
     }
 
     .how_donate__ {
