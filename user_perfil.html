@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> <!-- fonte Inter -->
+
+    <!-- <script defer type="text/javascript" src="/js/modal.js"></script> -->
+    <script defer type="text/javascript" src="./js/modal_test.js"></script>
+    <script defer type="text/javascript" src="./js/index.js"></script>
+    <script defer type="text/javascript" src="./js/show-password.js"></script>
+
+
+    <title>Amigo Sangue Bom | Login </title>
+
+
+</head>
+
+<body class="relative-footer">
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div id="modal-title">
+            <h4 style="margin: 20px; text-align: center;">Cadastre-se </h4> 
+            <i class="fa-classic fa-smile-wink" style="color:#000000"></i>
+            
+        </div>
+
+            <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-user" style="color:#A63539"></i></div>
+                <input placeholder="Nome completo" class="input-field" type="text" id="name_input">
+                <span class="input-highlight"></span>
+            </div>
+            <span class="message-error">Campo obrigatório</span>
+
+            <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-envelope" style="color:#A63539"></i></div>
+                <input placeholder="Email" class="input-field" type="email" id="email_input">
+                <span class="input-highlight"></span>
+                <span class="red-error" id="wrong_email">Email inválido</span>
+            </div>
+
+            <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-phone" style="color:#A63539"></i></div>
+                <input placeholder="Telefone" class="input-field" id="cellphone_input">
+                <span class="input-highlight"></span>
+                <span class="red-error" id="wrong_cellphone">Telefone inválido</span>
+            </div>
+
+            <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-calendar-days" style="color:#A63539"></i></div>
+                <input placeholder="Data de nascimento" class="input-field" id="born_input">
+                <span class="input-highlight"></span>
+                <span class="red-error" id="wrong_borndate">Data de nascimento inválido</span>
+            </div>
+
+            <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-id-card" style="color:#A63539"></i></div>
+                <input placeholder="CPF" class="input-field" type="text" id="cpf_input">
+                <span class="input-highlight"></span>
+                <span class="red-error" id="wrong_cpf">CPF inválido</span>
+            </div>
+
+            <div class="input-container">
+                <div class="icon_aws"><i class="fas fa-lock" style="color:#A63539"></i></div>
+                <input placeholder="Senha" class="input-field" type="password" id="password_input">
+                <span class="password-progress-bar"></span>
+            </div>
+
+            <div class="password-style">
+                
+                <div class="password-description">A senha deverá ter:</div><br>
+                <ul class="password-list">
+                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos uma letra maiúscula e uma letra minúscula</li>
+                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos um número</li>
+                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos um caractere especial</li>
+                    <li class="password-item"><i class="fas fa-circle-xmark" style="color:#969696"></i> Pelo menos 8 caracteres</li>
+                </ul>
+                <div class="password-line"></div>
+            </div>
+    
+            
+                <input class="input-checkbox" type="checkbox" id="informacoes_reais">
+                <label for="informacoes_reais" id="accept-conditions">Eu declaro que as informações acima são veridicas e me responsabilizo por
+                    quaisquer dados inválidos</label>
+                <br>
+
+                <input class="input-checkbox" type="checkbox" id="termos_de_uso">
+                <label for="termos_de_uso" id="accept-conditions">Eu aceito os <span class="red-color">Termos de Uso</span> e a <span
+                        class="red-color">Política de privacidade</span> </label>
+                
+                <br>
+            
+                <input class="input-checkbox" type="checkbox" id="termos_noticias">
+                <label for="termos_noticias" id="accept-conditions">Eu aceito receber comunicados sobre campanhas de doação, assim como outras
+                    provenientes desde projeto via e-mail. <span class="red-color">(Opcional)</span></label>
+           
+                <br>
+
+            <div class="button__wrapper">
+                <button class="button__primary" type="submit" id="done_signup" onclick="validarCadastro()">Concluir</button>
+                <button class="button__secundary" type="submit" id="cancel_signup">Cancelar</button>
+            </div>
+
+        </div>
+
+    <header>
+        <div class="logo">
+            <a href="#initial_page"><img src="../documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
+        </div>
+        <ul class="nav-bar">
+            <li><a class="nav-link" href="#title-01">Sobre o projeto</a></li>
+            <li><a class="nav-link" href="#title-02">Como doar</a></li>
+            <li><a class="nav-link" href="#title-03">Agendamento</a></li>
+            <li><a class="nav-link" href="#camp_title">Campanhas</a></li>
+            <li><a class="nav-link" href="#title-05">Fale conosco</a></li>
+        </ul>
+        <button class="button__primary" id="login_signup">CADASTRE-SE</button>
+    </header>
+
+    <section class="lateral-menu">
+        <p class="username-perfil">
+           Olá, <span id="nomeUsuario"></span> 
+        </p>
+    
+        <ul>
+            <li class="list-perfil"><a class="perfil-link" href="user_perfil.html">Alterar perfil</a></li>
+            <li class="list-perfil"><a class="perfil-link" href="user_perfil.html">Sair</a></li>
+        </ul>
+    </section>
+
+    <section class="perfil-informations">
+        <div class="cadastro">
+
+            <p class="title-perfil">Editar Cadastro</p>
+
+            <div class="container-image">
+                <img class="profile-image" src="" alt="">
+            </div>
+
+
+            <div class="perfil-container"> 
+                <form class="perfil-form">
+
+                    <div class="form-group">
+                        
+                        <label class="labels-perfil" for="nome">Nome:</label>  
+                        <div class="container-icon"><i class="fas fa-user" style="color:#A63539"></i></div>                    
+                        <input class="perfil-input" type="text" id="nome" name="nome" required>
+
+                        <label class="labels-perfil" for="email">E-mail:</label>
+                        <div class="container-icon"><i class="fas fa-envelope" style="color:#A63539"></i></div>
+                        <input class="perfil-input" type="email" id="email" name="email" required>
+                        
+                        <label class="labels-perfil" for="cpf">CPF:</label>
+                        <div class="container-icon"><i class="fas fa-id-card" style="color:#A63539"></i></div>
+                        <input class="perfil-input" type="text" id="cpf" name="cpf" readonly>
+                    
+                        <label class="labels-perfil" for="telefone">Telefone:</label>
+                        <div class="container-icon"><i class="fas fa-phone" style="color:#A63539"></i></div>
+                        <input class="perfil-input" type="text" id="telefone" name="telefone" required>
+
+                        <label class="labels-perfil" for="dataNasc">Data de nascimento:</label>
+                        <div class="container-icon"><i class="fas fa-calendar-days" style="color:#A63539"></i></div>
+                        <input class="perfil-input" type="date" id="dataNasc" name="dataNasc" required>
+
+                    </div>
+            
+                    <div class="form-group">
+
+                        <label class="labels-perfil" for="senhaAntiga">Senha:</label>
+                        <div class="container-icon"><i class="fas fa-lock" style="color:#A63539"></i></div>
+                        <input class="perfil-input" type="password" id="senhaAntiga" name="senhaAntiga">
+                    
+                        <label class="labels-perfil" for="novaSenha">Nova senha:</label>
+                        <div class="container-icon"><i class="fas fa-lock" style="color:#A63539"></i></div>
+                        <input class="perfil-input" type="password" id="novaSenha" name="novaSenha">
+                        
+                    </div>
+            </div>
+                </form>
+        
+            <div class="buttons-perfil">  
+                <input type="button" class="perfil-button" value="Salvar Alterações" onclick="salvarAlteracoes()">
+                <input type="button" class="perfil-button" value="Cancelar" onclick="salvarAlteracoes()">
+            </div> 
+        </div>          
+    </section>
+
+
+    <footer>
+        <ul>
+            <div class="imagens-footer">
+                <li class="list-itens"><a class="footer-link" href=""></a><img src="FacebookLogo.png" alt="Facebook"></li>
+                <li class="list-itens"><a class="footer-link" href=""></a><img src="InstagramLogo.png" alt="Instagram"></li>
+                <li class="list-itens"><a class="footer-link" href=""></a><img src="TwitterLogo.png" alt="Twitter"></li>
+                <li class="list-itens"><a class="footer-link" href=""></a><img src="YoutubeLogo.png" alt="Youtube"></li>
+            </div>
+        </ul>
+            
+            <div class="footer-text">
+                <p>Desenvolvido por Brian, Erick, Douglas, Luiz, Mateus, Ranan</p>
+                <p id="copy">&copy; 2023 Projeto Amigo Sangue Bom. Todos os direitos reservados</p>
+            </div>
+    </footer>
+</body>
+
