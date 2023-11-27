@@ -864,8 +864,8 @@ section.containerProjeto {
 
 
 .button_main button:hover {
-    background-color: #FBB6B6;
-    transition: ease 0.7s;
+    background: #a63539c5;
+    transition: all .3s;
 }
 
 .month {
@@ -919,7 +919,7 @@ section.containerProjeto {
 }
 
 aside {
-    height: 140vh;
+    height: 160vh;
     background-color: #f3f3f3;
     flex: 1;
     padding: 20px;
@@ -1048,7 +1048,7 @@ aside .pointer {
 }
 
  .texto_cont{
-    font-size: 18px;
+    font-size: 15px;
     color:#f3f3f3;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -1068,11 +1068,11 @@ aside .pointer {
 }
 #camp_label {
     font-size: 15px;
-    width: 100%;
+    width: 90%;
     padding: 20px 5px 5px;
     border: none;
     border-radius: 4px; 
-
+    margin-left: 3%;
 }
 
 #label_cont {
@@ -1127,6 +1127,13 @@ aside .pointer {
     margin-top: 25px;
 
 }
+
+
+.btn_area_contact {
+    width: 100%;
+    text-align: center;
+}
+
 .button_enviar {
     width: 150px;
     height: 40px;
@@ -1139,11 +1146,11 @@ aside .pointer {
     font-family: 'Inter', sans-serif;
     font-style: 600;
     font-size: 1.0rem;
-    margin-left: 40%;
     
 }
+
 .button_enviar:hover {
-    background-color: #FBB6B6;
+    background: #a63539c5;
     transition: all .3s;
 
 }
@@ -1888,7 +1895,15 @@ input[type="checkbox"]:checked::after {
         font-size: 13px;
     }
 
+    .texto_cont {
+        font-size: 0.8rem;
+
+    }
     
+    #camp_label {
+        margin-left: 3%;
+    }
+
     main {
         height: 100vh;
         padding-top: 45px;
@@ -1983,22 +1998,16 @@ input[type="checkbox"]:checked::after {
     .nav-bar {
         position: fixed;
         top: 0px;
-        right: 0;
-
         width: 100%;
-        height: 120vh;
-
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
-
         background: rgba(255, 255, 255, 0.083);
         /* rgba(46, 46, 46, 0.777); */
-
         transform: translatex(100%);
         transition: transform 0.5s ease-in;
         z-index: 1;
@@ -2288,7 +2297,7 @@ input[type="checkbox"]:checked::after {
 
     .how_donate__ {
         background-color: #BE8F90;
-        height: 75vh;
+        height: 85vh;
         padding-top: 50px;
     }
 
@@ -2329,7 +2338,7 @@ input[type="checkbox"]:checked::after {
     }
 
     aside {
-        height: 165vh;
+        height: 187vh;
     }
 
     .schedular_area {
@@ -2371,9 +2380,6 @@ input[type="checkbox"]:checked::after {
         margin: 0;
     }
 
-    aside {
-        height: 165vh;
-    }
 
     .camp_area {
         display: grid;
@@ -2560,26 +2566,19 @@ body.relative-footer footer {
     .nav-bar {
         position: fixed;
         top: 0px;
-        right: 0;
-
         width: 100%;
         height: 100vh;
-
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
-
         background: rgba(255, 255, 255, 0.083);
         /* rgba(46, 46, 46, 0.777); */
-
         transform: translatex(100%);
         transition: transform 0.5s ease-in;
         z-index: 1;
-
         margin: 0;
     }
 
@@ -3329,12 +3328,12 @@ body.relative-footer footer {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 140vh;
+        height: 168vh;
     }
 
     .how_donate__ {
         background-color: #BE8F90;
-        height: 94vh;
+        height: 101vh;
         padding-top: 50px;
     }
 
@@ -3748,7 +3747,7 @@ body.relative-footer footer {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 160vh;
+        height: 163vh;
     }
 
     .title_how_donate h1 {
@@ -4041,7 +4040,7 @@ body.relative-footer footer {
 
     /* RESPONSIVIDADE ÁREA DE AGENDAMENTO*/
     .how_donate {
-        height: 160vh;
+        height: 163vh;
     }
 
 
