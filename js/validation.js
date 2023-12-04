@@ -3,7 +3,7 @@ function validarRequisitos() {
     var todosRespondidos = true;
 
     // Verifica cada grupo de radio buttons individualmente
-    for (let i = 1; i <= 8; i++) {
+    for (let i = 1; i <= 9; i++) {
         var grupo = document.querySelectorAll('input[name="requisitos' + i + '"]:checked');
 
         // Se nenhum botão estiver marcado, defina todosRespondidos como falso
@@ -22,7 +22,7 @@ function validarRequisitos() {
         var algumSim = false;
 
         // Verifica cada grupo individualmente para "Sim"
-        for (let i = 1; i <= 8; i++) {
+        for (let i = 1; i <= 9; i++) {
             var grupo = document.querySelector('input[name="requisitos' + i + '"]:checked');
 
             // Se algum botão estiver marcado como "Sim", define algumSim como true
