@@ -1208,13 +1208,17 @@ aside .pointer {
     margin-bottom: 5px; 
 }
 
+.list-perfil:hover{
+    background-color: #A63539;
+    color: #fff;
+}
+
 .cadastro {
     font-family: 'Inter',sans-serif;
-    margin-top: -300px;
     border: 1.5px solid #A63539;
     border-radius: 7px;
-    width: 1200px;
-    margin-left: 800px;
+    width: 50%;
+    margin-left: 30vw;
     margin-top: -150px;
     margin-bottom: 40px;
     display: flex;
@@ -1236,6 +1240,11 @@ aside .pointer {
     margin-bottom: 10px;
     font-size: 1.125rem;
     margin-left: 30px;
+}
+
+.buttons-perfil {
+    position: relative;
+    text-align: center;
 }
 
 .perfil-button {
@@ -2542,6 +2551,33 @@ body.relative-footer footer {
     height: 21vh;
 }
 
+/* Responsividade área alteração de cadastro*/
+.cadastro {
+    width:85vw;
+    width: 85%;
+    margin-left: 10vw;
+    margin-top: 20px;
+}
+
+.perfil-input {
+    width: 300px;
+}
+
+.perfil-button {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: relative;
+    text-align: center;
+}
+
+footer{
+    margin-top: 80px;
+}
+
+.lateral-menu {
+    display: none;
+}
 
 
 /* TELAS EXTRA PEQUENAS */
