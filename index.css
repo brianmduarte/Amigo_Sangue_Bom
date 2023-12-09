@@ -1172,6 +1172,7 @@ aside .pointer {
     height: auto;
     margin-left: 280px;
     margin-top: 130px;
+    margin: auto;
 }
 
 .perfil-link {
@@ -1221,7 +1222,7 @@ aside .pointer {
     margin-left: 30vw;
     margin-top: -150px;
     margin-bottom: 40px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1230,7 +1231,7 @@ aside .pointer {
 
 .perfil-input {
     border-radius: 4px;
-    width: 400px;
+    width: 40vw;
     height: 30px;
     margin-bottom: 20px;
 }
@@ -1270,6 +1271,7 @@ aside .pointer {
 
 .perfil-informations {
     height: 90vh;
+    margin-bottom: 350px;
 }
 
 
@@ -2559,6 +2561,10 @@ body.relative-footer footer {
     margin-top: 20px;
 }
 
+#cadastro{
+    display: none;
+}
+
 .perfil-input {
     width: 300px;
 }
@@ -2571,13 +2577,8 @@ body.relative-footer footer {
     text-align: center;
 }
 
-footer{
-    margin-top: 80px;
-}
 
-.lateral-menu {
-    display: none;
-}
+
 
 
 /* TELAS EXTRA PEQUENAS */
@@ -3890,7 +3891,18 @@ footer{
         font-size: 0.8rem;
     }
 
+.cadastro {
+    width: 55%;
+    margin-left: 25vw;
 }
+
+.perfil-input {
+    width: 45vw;
+}
+
+}
+
+
 
 
 

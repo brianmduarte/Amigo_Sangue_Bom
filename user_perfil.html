@@ -49,15 +49,15 @@
         <p class="username-perfil">
            Olá, <span id="nomeUsuario"></span> 
         </p>
-    
+
         <ul>
-            <li class="list-perfil"><a class="perfil-link" href="user_perfil.html">Alterar perfil</a></li>
+            <li class="list-perfil" ><i onclick="exibirEditInfo()">Alterar perfil</i></li>
             <li class="list-perfil"><a class="perfil-link" href="user_perfil.html">Sair</a></li>
         </ul>
     </section>
 
     <section class="perfil-informations">
-        <div class="cadastro">
+        <div class="cadastro" id="cadastro">
 
             <p class="title-perfil">Editar Cadastro</p>
 
@@ -130,5 +130,15 @@
                 <p id="copy">&copy; 2023 Projeto Amigo Sangue Bom. Todos os direitos reservados</p>
             </div>
     </footer>
+
+    <script>
+        function exibirEditInfo() {
+            if(cadastro.style.display == 'flex') {
+                cadastro.style.display = 'none'
+            } else {
+                cadastro.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 
