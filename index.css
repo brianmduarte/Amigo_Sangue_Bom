@@ -1164,10 +1164,17 @@ aside .pointer {
     padding: 0;
 }
 
+.icon-user {
+    border: 1px solid #A63539;
+    border-radius: 40%;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+
 .lateral-menu {
     font-family: 'Inter',sans-serif;
     font-size: 1.25rem;
-    background-color: rgb(255, 255, 255);
     width: 280px;
     height: auto;
     margin-left: 280px;
@@ -1183,7 +1190,8 @@ aside .pointer {
 
 .perfil-link:hover {
     transform: scale(1.02);
-    color: #A63539;
+    color: #fff;
+    cursor: pointer;
 }
 
 .perfil-image {
@@ -1204,7 +1212,8 @@ aside .pointer {
 
 .list-perfil {
     font-family: 'Inter',sans-serif;
-    border: 1px solid #A63539;
+    background-color: #fff;
+    border-radius: 2px;
     padding: 10px 10px 10px 10px;
     margin-bottom: 5px; 
 }
@@ -1216,7 +1225,8 @@ aside .pointer {
 
 .cadastro {
     font-family: 'Inter',sans-serif;
-    border: 1.5px solid #A63539;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #00000096;
     border-radius: 7px;
     width: 50%;
     margin-left: 30vw;
@@ -1246,6 +1256,7 @@ aside .pointer {
 .buttons-perfil {
     position: relative;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .perfil-button {
@@ -1301,6 +1312,10 @@ aside .pointer {
 
 
 /* ESTILIZAÇÃO FOOTER POR MATEUS - INÍCIO */
+
+.footer-area-user{
+    margin-top: 300px;
+}
 
 body.fixed-footer footer {
     background-color: #A63539;
@@ -2563,10 +2578,11 @@ body.relative-footer footer {
 
 #cadastro{
     display: none;
+    margin: auto;
 }
 
 .perfil-input {
-    width: 300px;
+    width: 50vw;
 }
 
 .perfil-button {
@@ -3093,6 +3109,16 @@ body.relative-footer footer {
         transform: translatex(0%);
     }
 
+    .cadastro {
+     width: 75vw;
+     margin: auto;
+    }
+    
+    .perfil-input {
+       width: 55vw;
+    }
+    
+
 }
 
 
@@ -3539,6 +3565,19 @@ body.relative-footer footer {
         margin-top: 15px;
     }
 
+    .cadastro {
+        width: 65vw;
+        margin: auto;
+    }
+    
+    .perfil-input {
+       width: 55vw;
+    }
+
+    .footer-area-user{
+        margin-top: 350px;
+    }
+
 }
 
 
@@ -3890,10 +3929,10 @@ body.relative-footer footer {
     .itens-lista {
         font-size: 0.8rem;
     }
-
+/* Responsividade área alteração de cadastro*/
 .cadastro {
     width: 55%;
-    margin-left: 25vw;
+    margin: auto;
 }
 
 .perfil-input {
@@ -3901,10 +3940,6 @@ body.relative-footer footer {
 }
 
 }
-
-
-
-
 
 /* DESKTOPS */
 @media (min-width: 1200PX) and (max-width: 1919px) {
@@ -4176,7 +4211,14 @@ body.relative-footer footer {
         font-family: "Inter",sans-serif;
     }
 
-
+    .cadastro {
+        width: 45%;
+        margin: auto;
+    }
+    
+    .perfil-input {
+        width: 35vw;
+    }
 }
 
 
@@ -4259,6 +4301,14 @@ body.relative-footer footer {
         margin-top: 80px;
     }
 
+    .cadastro {
+        width: 45%;
+        margin-left: 28vw;
+    }
+    
+    .perfil-input {
+        width: 35vw;
+    }
 
 }
 

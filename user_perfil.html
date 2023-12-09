@@ -27,13 +27,13 @@
 
 </head>
 
-<body class="relative-footer">
+<body class="relative-footer" style="background-color: #BE8F90;">
 
 
 
     <header>
         <div class="logo">
-            <a href="#initial_page"><img src="./documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
+            <a href="./index.html"><img src="./documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
         </div>
         <ul class="nav-bar">
             <li><a class="nav-link" href="#title-01">Sobre o projeto</a></li>
@@ -42,7 +42,7 @@
             <li><a class="nav-link" href="#camp_title">Campanhas</a></li>
             <li><a class="nav-link" href="#title-05">Fale conosco</a></li>
         </ul>
-        <div class="icon-user" style="width:10px;"><i class="fas fa-user" style="color:#A63539"></i></div>
+        <div class="icon-user"><i class="fas fa-user" style="color:#A63539"></i></div>
     </header>
 
     <section class="lateral-menu">
@@ -51,8 +51,8 @@
         </p>
 
         <ul>
-            <li class="list-perfil" ><i onclick="exibirEditInfo()">Alterar perfil</i></li>
-            <li class="list-perfil"><a class="perfil-link" href="user_perfil.html">Sair</a></li>
+            <li class="list-perfil" ><i class="perfil-link" onclick="exibirEditInfo()">Alterar perfil</i></li>
+            <li class="list-perfil"><a class="perfil-link" href="./index.html">Sair</a></li>
         </ul>
     </section>
 
@@ -81,7 +81,7 @@
                         
                         <label class="labels-perfil" for="cpf">CPF:</label>
                         <div class="container-icon"><i class="fas fa-id-card" style="color:#A63539"></i></div>
-                        <input class="perfil-input" type="text" id="cpf" name="cpf" readonly>
+                        <input class="perfil-input" type="text" id="cpf" name="cpf" required>
                     
                         <label class="labels-perfil" for="telefone">Telefone:</label>
                         <div class="container-icon"><i class="fas fa-phone" style="color:#A63539"></i></div>
@@ -115,7 +115,7 @@
     </section>
 
 
-    <footer style="margin-top: 300px;">
+    <footer class="footer-area-user">
         <ul>
             <div class="imagens-footer">
                 <li class="list-itens"><a class="footer-link" href=""></a><img src="./documentos/img/FacebookLogo.png" alt="Facebook"></li>
