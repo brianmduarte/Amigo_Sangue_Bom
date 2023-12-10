@@ -36,22 +36,23 @@
             <a href="./index.html"><img src="./documentos/img/logoprojeto.png" alt="Amigo Sangue Bom"></a>
         </div>
         <ul class="nav-bar">
-            <li><a class="nav-link" href="#title-01">Sobre o projeto</a></li>
-            <li><a class="nav-link" href="#title-02">Como doar</a></li>
-            <li><a class="nav-link" href="#title-03">Agendamento</a></li>
-            <li><a class="nav-link" href="#camp_title">Campanhas</a></li>
-            <li><a class="nav-link" href="#title-05">Fale conosco</a></li>
+            <li><a class="nav-link" href="./about_project.html">Sobre o projeto</a></li>
+            <li><a class="nav-link" href="./how_donate.html">Como doar</a></li>
+            <li><a class="nav-link" href="./scheduler_area.html">Agendamento</a></li>
+            <li><a class="nav-link" href="./campaign_area.html">Campanhas</a></li>
+            <li><a class="nav-link" href="./contact_us_area.html">Fale conosco</a></li>
         </ul>
-        <div class="icon-user"><i class="fas fa-user" style="color:#A63539"></i></div>
+        <div class="icon-user"><i class="fas fa-user" style="color:#A63539"></i><span>Doador</span></div>
     </header>
 
     <section class="lateral-menu">
         <p class="username-perfil">
-           Olá, <span id="nomeUsuario"></span> 
+           Olá, Doador <span id="nomeUsuario"></span> 
         </p>
 
         <ul>
             <li class="list-perfil" ><i class="perfil-link" onclick="exibirEditInfo()">Alterar perfil</i></li>
+            <li class="list-perfil" ><i class="perfil-link" onclick="exibirDoacoes()"> Últimas doações</i></li>
             <li class="list-perfil"><a class="perfil-link" href="./index.html">Sair</a></li>
         </ul>
     </section>
@@ -113,7 +114,51 @@
             </div> 
         </div>          
     </section>
+    <section class="doacoes-informations">
+        <div class="doacoes" id="doacoes">
 
+            <p class="title-perfil">Doações</p>
+            
+            <table border="1" class="tabela_doacao">
+                <tr>
+                    <th>Nome</th>
+                    <th>Instituição</th>
+                    <th>Data</th>
+                    <th>Dias até próxima Doação</th>
+                </tr>
+
+                <tr>
+                    <td>Doador</td>
+                    <td>Biocor</td>
+                    <td>10/01/2023</td>
+                    <td>0 dias</td>
+                </tr>
+
+                <tr>
+                    <td>Doador</td>
+                    <td>Felício Rocho</td>
+                    <td>05/06/2023</td>
+                    <td>0 dias</td>
+                </tr>
+
+                <tr>
+                    <td>Doador</td>
+                    <td>Biocor</td>
+                    <td>15/12/2023</td>
+                    <td>55 dias</td>
+                </tr>
+
+                <tr>
+                    <td>Doador</td>
+                    <td>Biocor</td>
+                    <td>12/03/2023</td>
+                    <td>-55 dias</td>
+                </tr>
+
+            </table>
+
+        </div>          
+    </section>         
 
     <footer class="footer-area-user">
         <ul>
@@ -137,6 +182,15 @@
                 cadastro.style.display = 'none'
             } else {
                 cadastro.style.display = 'flex'
+            }
+        }
+
+
+        function exibirDoacoes() {
+            if(doacoes.style.display == 'flex') {
+                doacoes.style.display = 'none'
+            } else {
+                doacoes.style.display = 'flex'
             }
         }
     </script>
